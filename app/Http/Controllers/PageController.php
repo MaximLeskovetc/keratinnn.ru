@@ -2,12 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Application;
 use App\Post;
 use App\Service;
 use App\Portfolio;
-use Illuminate\Http\Request;
-use DB;
 use Auth;
 
 class PageController extends Controller
@@ -16,8 +13,8 @@ class PageController extends Controller
     {
         
         $service = Service::all();
-        $posts = Post::all()->take(6);
-        $portfolio = Portfolio::all()->take(6);
+        $posts = Post::all()->take(4);
+        $portfolio = Portfolio::all()->take(8);
 
         //$portfolio = Portfolio::all();
 
@@ -33,7 +30,7 @@ class PageController extends Controller
         
         }
 
-        return view('index', 
+        return view('index',
         	[
 	        	'service'     => $service,
 	        	'posts'       => $posts,

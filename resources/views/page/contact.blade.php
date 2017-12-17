@@ -1,29 +1,39 @@
-@extends('layout.app')
+@extends('layouts.app')
 @section ('title', 'Контакты')
 @section ('description', 'Страница с контактной информацией')
 @section('content')
-
-		<!--Контакты-->
-
-		<section id="banner">
-			<div class="content align-center">
-
-				<header id="header">
-				<div class="post">
-					<h1>Контакты</h1>
-
-					<h5>Телефон</h5>
-					<p><span class="icon fa-phone"><a href="tel:8(908)157-49-97" class="logo"> 8(908)157-49-97</a></span></p><hr/>
-					
-					<h5>Вконтакте</h5>
-					<p><span class="icon fa-vk"><a href="https://vk.com/lina_leskovets" class="logo"> vk.com/lina_leskovets</a></span></p><hr/>
-					
-					<h5>Instagram</h5>
-					<p><span class="icon fa-instagram"><a href="https://www.instagram.com/lina_hair52/" class="logo"> lina_hair52</a></span></p><hr/>
-					
-					<h5><span class="icon fa-home">Адрес:</span></h5>
-					<p>По городу выезд на дом бесплатно.</p>
-				</div>
-				</header>
-		</section>
+    <section class="testimonials text-center bg-light">
+        <div class="container">
+            <h2 class="mb-5">Контакты</h2>
+            <div class="row">
+                <div class="col-lg-3 ">
+                    <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                        <h5>Телефон</h5>
+                        <i class="fa fa-phone"></i>
+                        <a href="tel:8(908)157-49-97" class="logo"> 8(908)157-49-97</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                        <h5>Вконтакте</h5>
+                        <i class="fa fa-vk"></i>
+                        <a href="https://vk.com/lina_leskovets"> vk.com/lina_leskovets</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                        <h5>Instagram</h5>
+                        <i class="fa fa-instagram"></i>
+                        <a href="https://www.instagram.com/lina_hair52/"> lina_hair52</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                        <h5><i class="fa fa-home">Адрес:</i></h5>
+                        <p>г. Нижний Новгород, ул. Исполкома, д.3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 @endsection

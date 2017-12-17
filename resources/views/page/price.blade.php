@@ -1,48 +1,52 @@
-@extends('layout.app')
+@extends('layouts.app')
 @section ('title', 'Цены')
 @section ('description', 'Страница с ценами на услуги Кератинового выпрямления, ботокса для волос, флисинга прикорневого объема, и полировки в Нижнем Новгороде')
 @section('content')
-		<!--Цены-->
 
-		<section id="banner">
-			<div class="content">
-				<header class="main">
-					<h1>Цены</h1>
-					<h2 class="align-center">Сколько стоят улуги?</h2>
-				</header>
-				<div class="posts">
-					<article>
-						<h4>Кератиновое выпрямление</h4>
-						<ul><b>Стоимость процедуры:</b>
-							<ol>челка - 500 руб</ol>
-							<ol>длина выше плеч - 1700 руб. + полировка в подарок</ol>
-							<ol>длина до лопаток - 2500 руб. + полировка в подарок</ol>
-							<ol>длина до поясницы - 3000 руб. + полировка в подарок</ol>
-						</ul>
-					</article>
-					<article>
-						<h4>Ботокс волос</h4>
-						<ul><b>Стоимость процедуры:</b>
-							<ol>длина выше плеч - 1600 руб. + полировка в подарок</ol>
-							<ol>длина до лопаток - 2400 руб. + полировка в подарок</ol>
-							<ol>длина до поясницы - 2900 руб. + полировка в подарок</ol>
-						</ul>
-					</article>
-					<article>
-						<h4>Флисинг</h4>
-						<ul><b>Стоимость процедуры:</b>
-							<ol>любая длина 1200 руб. + полировка в подарок</ol>
-						</ul>
-					</article>
-					<article>
-						<h4>Полировка волос</h4>
-						<ul><b>Стоимость процедуры:</b>
-							<ol>любая длина 400 рублей</ol>
-						</ul>
-					</article>
-
-				</div>
-			<a href="{{url('/service')}}" class="button center">Подробнее о услугах</a>
-			</div>
-		</section>
+    <section class="testimonials text-center bg-light">
+        <div class="container">
+            <h1>Цены</h1>
+            <h2 class="mb-5">Сколько стоят улуги?</h2>
+            <div class="row">
+                <div class="col-lg-3 ">
+                    <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                        <h5>Кератиновое выпрямление</h5>
+                        <ul class="list-group">Стоимость процедуры:
+                            <li class="list-group-item">челка - 500 руб</li>
+                            <li class="list-group-item">длина выше плеч - 1700 руб. + полировка в подарок</li>
+                            <li class="list-group-item">длина до лопаток - 2500 руб. + полировка в подарок</li>
+                            <li class="list-group-item">длина до поясницы - 3000 руб. + полировка в подарок</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                        <h5>Флисинг</h5>
+                        <ul class="list-group">Стоимость процедуры:
+                            <li class="list-group-item">любая длина 1200 руб. + полировка в подарок</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                        <h5>Ботокс для волос</h5>
+                        <ul class="list-group">Стоимость процедуры:
+                            <li class="list-group-item">челка - 500 руб</li>
+                            <li class="list-group-item">длина выше плеч - 1700 руб. + полировка в подарок</li>
+                            <li class="list-group-item">длина до лопаток - 2500 руб. + полировка в подарок</li>
+                            <li class="list-group-item">длина до поясницы - 3000 руб. + полировка в подарок</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                        <h5>Полировка волос</h5>
+                        <ul class="list-group">Стоимость процедуры:
+                            <li class="list-group-item">любая длина 400 рублей</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 @endsection
