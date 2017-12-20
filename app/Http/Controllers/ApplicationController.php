@@ -11,15 +11,7 @@ class ApplicationController extends Controller
     public function store(Request $request)
     {
         $application = new Application();
-
-        if (empty($request->work)) {
-            $application->works = "Не указана";
-        } else {
-            $application->works = $request->work;
-        }
-
         $application->phone = $request->phone;
-        $application->name = $request->name;
         $application->status = 'Обрабатывается';
 
         $this->validate(
