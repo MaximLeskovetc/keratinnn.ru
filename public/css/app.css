@@ -1,0 +1,43 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #f5f5f5;
+    font-size: 14px;
+}
+
+.navbar-brand {
+    color: #f5f5f5 !important;
+}
+
+.content {
+    margin-top: 50px;
+
+}
+
+.navbar-brand:hover {
+    color: #d4d4d4 !important;
+}
+
+.navbar {
+    background-color: rgba(24, 50, 87, 0.73);
+    border: none;
+}
+
+.navbar a {
+    color: #f5f5f5 !important;
+    margin-left: 10px;
+}
+
+.navbar a:hover {
+    text-decoration: none;
+}
+
+.navbar .contact {
+    margin-top: 15px;
+}
+
+.nav-but {
+    float: left;
+    margin-left: 30px;
+    background: none;
+    border: none;
+}
