@@ -128,20 +128,20 @@
                 </div>
                 <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
                     <form method="POST" enctype="multipart/form-data"
-                          action="{{action('ApplicationController@store')}}"/>
-                    <input type="hidden" name="_token" value="{{csrf_token()}}"/>
-                    <div class="form-row">
-                        <div class="col-12 col-md-9 mb-2 mb-md-0">
-                            <input name="phone" type="text" class="form-control form-control-lg"
-                                   placeholder="Ваш номер телефона">
+                          action="{{action('ApplicationController@store')}}">
+                        <input type="hidden" name="_token" value="{{csrf_token()}}"/>
+                        <div class="form-row">
+                            <div class="col-12 col-md-9 mb-2 mb-md-0">
+                                <input name="phone" type="text" class="form-control form-control-lg"
+                                       placeholder="Ваш номер телефона">
+                            </div>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                            <div class="col-12 col-md-3">
+                                <button type="submit" class="btn btn-lg btn-success">Оставить заявку!</button>
+                            </div>
                         </div>
-                        @foreach ($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                        <div class="col-12 col-md-3">
-                            <button type="submit" class="btn btn-lg btn-success">Оставить заявку!</button>
-                        </div>
-                    </div>
                     </form>
                 </div>
             </div>

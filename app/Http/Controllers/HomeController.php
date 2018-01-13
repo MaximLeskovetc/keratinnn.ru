@@ -2,12 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use Auth;
+use Illuminate\Support\Facades\Auth;
 use App\Application;
 use App\Post;
 use App\Service;
 use App\Portfolio;
-use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
@@ -19,30 +18,29 @@ class HomeController extends Controller
 
     public function admin()
     {
-        if(Auth::user()->id == 1){
+        if (Auth::user()->id == 1) {
             $portfolio = Portfolio::all();
             $service = Service::all();
             $posts = Post::all();
             $application = Application::all();
-            
-            for ($i=0; $i<count($posts);$i++){
 
+            for ($i = 0; $i < count($posts); $i++) {
                 $posts[$i]->description = str_limit($posts[$i]->description, 30);
-            
             }
 
-            return view ('page.admin',          [
-                    'services'    => $service,
-                    'posts'       => $posts,
-                    'portfolios'  => $portfolio,
-                    'applications' => $application,
-                ]);
+            return view('page.admin', [
+                'services' => $service,
+                'posts' => $posts,
+                'portfolios' => $portfolio,
+                'applications' => $application,
+            ]);
         }
 
         return redirect()->back();
     }
 
-    public function Logout(){
+    public function Logout()
+    {
         Auth::logout();
         return redirect()->back();
     }

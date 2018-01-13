@@ -16,10 +16,9 @@ class ApplicationController extends Controller
 
         $this->validate(
             $request, [
-            'phone' => 'required',
-        ],
+            'phone' => 'required'],
             $messages = [
-                'required' => 'Заполните все поля',
+                'required' => 'Заполните все поля'
             ]);
 
         $application->save();
@@ -29,24 +28,16 @@ class ApplicationController extends Controller
 
     public function update($id)
     {
-
-        $application = Application::find($id);
-
+        $application = Application::where('id', $id);
         $application->status = 'Принято';
         $application->save();
 
         return redirect()->back();
-
-
     }
 
     public function destroy($id)
     {
-
-        $application = Application::find($id);
-
-        $application->delete();
-
+        Application::destroy($id);
         return redirect()->back();
     }
 }

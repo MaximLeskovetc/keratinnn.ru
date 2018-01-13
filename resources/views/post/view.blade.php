@@ -11,9 +11,7 @@
             <img class="img-fluid" src="{{asset('/images/upload/')}}/{{$post->image}}"
                  alt="{{$post->title}}">
             <h1>{{$post->title}}</h1>
-            <p class="lead mb-3">
-            <p>{!!$post->description!!}</p>
-            </p>
+            <p class="lead mb-3">{!!$post->description!!}</p>
             <a href="{{url('/')}}" class="btn btn-info">На главную</a>
         </div>
     </div>

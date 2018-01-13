@@ -1,8 +1,9 @@
 <nav class="navbar navbar-light bg-light navbar-fixed-top">
     <div class="container">
-        <div class="pull-left"><i></i>Нижний Новгород</div>
-        <a class="navbar-brand text-center" href="{{url('/')}}"><b>Keratin</b>NN</a>
+        <a class="navbar-brand" href="{{url('/')}}"><b>Keratin</b>NN</a>
         <ul class="pull-right list-inline">
+            <li class="list-inline-item m-l-15">
+                <i class="fa fa-home"></i>Нижний Новгород</li>
             <li class="list-inline-item m-l-15">
                 <a href="tel:8(908)157-49-97">
                     <i class="fa fa-phone"></i>8(908)157-49-97

@@ -1,26 +1,24 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use Illuminate\Http\Request;
-use Auth;
+use Illuminate\Support\Facades\Auth;
 use Image;
 use App\Post;
-use Illuminate\Support\Facades\File;
-
 
 class PostController extends Controller
 {
 
     public function index()
     {
-        
         $post = Post::all();
-
-        for ($i=0; $i<count($post);$i++){
+        for ($i = 0; $i < count($post); $i++) {
 
             $post[$i]->description = str_limit($post[$i]->description, 200);
         }
-        return view('post.index', ['posts' => $post] );
+
+        return view('post.index', ['posts' => $post]);
     }
 
     public function create()
@@ -35,28 +33,24 @@ class PostController extends Controller
         $post->alias = $alias;
         $post->title = $request->title;
         $post->description = $request->description;
-
         $this->validate(
             $request, [
-                'title' => 'required|max:255',
-                'description' => 'required',
-                'image' => 'image'],
+            'title' => 'required|max:255',
+            'description' => 'required',
+            'image' => 'image'],
             $messages = [
-                'required'    => 'Заполните все поля',
-                'image'       => 'Не совпадает формат изображения',
-                'max'         => 'Слишком длинное название статьи',
-                'min'         => 'Слишком короткое содержание статьи'
+                'required' => 'Заполните все поля',
+                'image' => 'Не совпадает формат изображения',
+                'max' => 'Слишком длинное название статьи',
+                'min' => 'Слишком короткое содержание статьи'
             ]);
-
-        if ($request->hasFile('photo')){
+        if ($request->hasFile('photo')) {
             $photo = $request->file('photo');
-            $filename = substr(bcrypt(time()),4,14).'_'.date("mdy").'.'.$photo->getClientOriginalExtension();
-            Image::make($photo)->save(public_path('/images/upload/'. $filename));
-
+            $filename = substr(bcrypt(time()), 4, 14) . '_' . date("mdy") . '.' . $photo->getClientOriginalExtension();
+            Image::make($photo)->save(public_path('/images/upload/' . $filename));
             $post->image = $filename;
             $post->save;
         }
-
         $post->save();
 
         return redirect('/admin');
@@ -67,18 +61,17 @@ class PostController extends Controller
     {
         $post = Post::where('alias', $alias)->first();
         $comments = $post->comment;
-
-        if(!is_null(Auth::user())){
-            if(Auth::user()->name=='admin'){
+        if (!is_null(Auth::user())) {
+            if (Auth::user()->name == 'admin') {
 
                 return view('post.admin.view', [
-                'post' => $post,            
-                'comments' => $comments]);
+                    'post' => $post,
+                    'comments' => $comments]);
             }
         }
 
         return view('post.view', [
-            'post' => $post,            
+            'post' => $post,
             'comments' => $comments]);
     }
 
@@ -90,33 +83,28 @@ class PostController extends Controller
 
     public function update(Request $request, $id)
     {
-
         $post = Post::find($id);
-
         $post->title = $request->title;
         $post->description = $request->description;
-
         $this->validate(
             $request, [
-                'title' => 'required|max:255',
-                'description' => 'required',
-                'image' => 'image'],
+            'title' => 'required|max:255',
+            'description' => 'required',
+            'image' => 'image'],
             $messages = [
-                'required'    => 'Заполните все поля',
-                'image'       => 'Не совпадает формат изображения',
-                'max'         => 'Слишком длинное название статьи',
-                'min'         => 'Слишком короткое содержание статьи'
+                'required' => 'Заполните все поля',
+                'image' => 'Не совпадает формат изображения',
+                'max' => 'Слишком длинное название статьи',
+                'min' => 'Слишком короткое содержание статьи'
             ]);
-  
-        if ($request->hasFile('photo')){
+        if ($request->hasFile('photo')) {
             $photo = $request->file('photo');
-            $filename = substr(bcrypt(time()),4,14).'_'.date("mdy").'.'.$photo->getClientOriginalExtension();
-            Image::make($photo)->resize(800,600)->save(public_path('/images/upload/'. $filename));
+            $filename = substr(bcrypt(time()), 4, 14) . '_' . date("mdy") . '.' . $photo->getClientOriginalExtension();
+            Image::make($photo)->resize(800, 600)->save(public_path('/images/upload/' . $filename));
 
             $post->image = $filename;
             $post->save;
         }
-
         $post->save();
 
         return redirect()->back();
@@ -125,9 +113,7 @@ class PostController extends Controller
 
     public function destroy($id)
     {
-        $post = Post::find($id);
-
-        $post->delete();
+        Post::destroy($id);
 
         return redirect()->back();
     }

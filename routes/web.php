@@ -12,7 +12,6 @@
 */
 
 Route::get('/', 'PageController@index');
-Route::get('/about', 'PageController@about');
 Route::get('/contact', 'PageController@contact');
 Route::get('/price', 'PageController@price');
 Route::get('/profile', 'PageController@profile');
