@@ -15,8 +15,6 @@ class PageController extends Controller
         $posts = Post::all()->take(4);
         $portfolio = Portfolio::all()->take(8);
 
-        //$portfolio = Portfolio::all();
-
         for ($i = 0; $i < count($posts); $i++) {
 
             $posts[$i]->description = str_limit($posts[$i]->description, 200);

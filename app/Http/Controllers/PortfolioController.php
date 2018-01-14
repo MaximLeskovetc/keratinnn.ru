@@ -23,8 +23,6 @@ class PortfolioController extends Controller
 
     public function store(Request $request)
     {
-        $portfolio = new Portfolio();
-        $portfolio->title = $request->title;
         $this->validate(
             $request, [
             'title' => 'required|max:255',
@@ -34,6 +32,9 @@ class PortfolioController extends Controller
                 'image' => 'Не совпадает формат изображения',
                 'max' => 'Слишком длинное описание',
             ]);
+
+        $portfolio = new Portfolio();
+        $portfolio->title = $request->title;
 
         if ($request->hasFile('photo')) {
             $photo = $request->file('photo');
@@ -51,20 +52,19 @@ class PortfolioController extends Controller
 
     public function show($id)
     {
-        $portfolio = Portfolio::where('id', $id);
+        $portfolio = Portfolio::all()->where('id', $id)->first();
+
         return view('portfolio.view', ['portfolio' => $portfolio]);
     }
 
     public function edit($id)
     {
-        $portfolio = Portfolio::find($id);
+        $portfolio = Portfolio::all()->where('id', $id)->first();
         return view('portfolio.edit', ['portfolio' => $portfolio]);
     }
 
     public function update(Request $request, $id)
     {
-        $portfolio = Portfolio::find($id);
-        $portfolio->title = $request->title;
         $this->validate(
             $request, [
             'title' => 'required|max:255',
@@ -74,6 +74,10 @@ class PortfolioController extends Controller
                 'image' => 'Не совпадает формат изображения',
                 'max' => 'Слишком длинное описание',
             ]);
+
+        $portfolio = Portfolio::all()->where('id', $id)->first();
+        $portfolio->title = $request->title;
+
         if ($request->hasFile('photo')) {
             $photo = $request->file('photo');
             $filename = substr(bcrypt(time()), 4, 14) . '_' . date("mdy") . '.' . $photo->getClientOriginalExtension();

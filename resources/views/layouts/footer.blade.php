@@ -1,33 +1,34 @@
-<footer class="footer bg-light">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
-                <ul class="list-inline mb-2">
-                    <li class="list-inline-item">&sdot;</li>
-                    <li class="list-inline-item">
-                        <a href="{{url('/contact')}}">Контакты</a>
-                    </li>
-                    <li class="list-inline-item">&sdot;</li>
-                    <li class="list-inline-item">
-                        <a href="{{url('price')}}">Цены</a>
-                    </li>
-                </ul>
-                <p class="text-muted small mb-4 mb-lg-0">&copy; KeratinNN.ru 2017. Все права защищены.</p>
-            </div>
-            <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
-                <ul class="list-inline mb-0">
-                    <li class="list-inline-item mr-3">
-                        <a href="https://vk.com/lina_leskovets">
-                            <i class="fa fa-vk fa-2x fa-fw"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://www.instagram.com/lina_hair52/">
-                            <i class="fa fa-instagram fa-2x fa-fw"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+<footer>
+    <ul class="pull-left list-inline">
+        <li class="list-inline-item">
+            <a href="{{url('/contact')}}">Контакты</a>
+        </li>
+        <li class="list-inline-item">&sdot;</li>
+        <li class="list-inline-item">
+            <a href="{{url('price')}}">Цены</a>
+        </li>
+    </ul>
+    <ul class="pull-right">
+        <li class="list-inline-item m-l-15">
+            <a href="#">
+                <i class="fa fa-map-marker"></i> Нижний Новгород
+            </a>
+        </li>
+        <li class="list-inline-item m-l-15">
+            <a href="tel:8(908)157-49-97">
+                <i class="fa fa-phone"></i> 8(908)157-49-97
+            </a>
+        </li>
+        <li class="list-inline-item m-l-15">
+            <a href="https://vk.com/keratin_botox_nn">
+                <i class="fa fa-vk"></i>
+            </a>
+        </li>
+        <li class="list-inline-item m-l-15">
+            <a href="https://www.instagram.com/lina_hair52/">
+                <i class="fa fa-instagram"></i>
+            </a>
+        </li>
+    </ul>
+    <p class="text-white text-center">&copy; KeratinNN.ru 2017. Все права защищены.</p>
 </footer>

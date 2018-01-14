@@ -18,7 +18,7 @@ class HomeController extends Controller
 
     public function admin()
     {
-        if (Auth::user()->id == 1) {
+        if (Auth::user()->id === 1) {
             $portfolio = Portfolio::all();
             $service = Service::all();
             $posts = Post::all();

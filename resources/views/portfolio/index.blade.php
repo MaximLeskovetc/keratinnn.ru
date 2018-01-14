@@ -5,7 +5,7 @@
     <section>
         <div class="container">
             <h2 class="mb-5">Примеры работ</h2>
-            <div class="row">
+            <div class="row portfolio">
                 @foreach($portfolios as $portfolio)
                     <div class="col-12">
                         <div class="testimonial-item mx-auto mb-5 mb-lg-0">
@@ -15,7 +15,7 @@
                     </div>
                 @endforeach
             </div>
-            <h5 class="mb-5"><a href="{{url('/')}}" class="btm btn-default">На главную</a></h5>
+            <a href="{{url('/')}}" class="btn btn-info">На главную</a>
         </div>
     </section>
 @endsection

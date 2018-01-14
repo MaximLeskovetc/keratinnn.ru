@@ -28,11 +28,6 @@ class PostController extends Controller
 
     public function store(Request $request)
     {
-        $post = new Post();
-        $alias = Post::rus2translit($request->title);
-        $post->alias = $alias;
-        $post->title = $request->title;
-        $post->description = $request->description;
         $this->validate(
             $request, [
             'title' => 'required|max:255',
@@ -44,6 +39,13 @@ class PostController extends Controller
                 'max' => 'Слишком длинное название статьи',
                 'min' => 'Слишком короткое содержание статьи'
             ]);
+
+        $post = new Post();
+        $alias = Post::rus2translit($request->title);
+        $post->alias = $alias;
+        $post->title = $request->title;
+        $post->description = $request->description;
+
         if ($request->hasFile('photo')) {
             $photo = $request->file('photo');
             $filename = substr(bcrypt(time()), 4, 14) . '_' . date("mdy") . '.' . $photo->getClientOriginalExtension();
@@ -59,7 +61,7 @@ class PostController extends Controller
 
     public function show($alias)
     {
-        $post = Post::where('alias', $alias)->first();
+        $post = Post::all()->where('alias', $alias)->first();
         $comments = $post->comment;
         if (!is_null(Auth::user())) {
             if (Auth::user()->name == 'admin') {
@@ -77,13 +79,14 @@ class PostController extends Controller
 
     public function edit($id)
     {
-        $post = Post::find($id);
+        $post = Post::all()->where('id', $id)->first();
+
         return view('post.edit', ['post' => $post]);
     }
 
     public function update(Request $request, $id)
     {
-        $post = Post::find($id);
+        $post = Post::all()->where('id', $id)->first();
         $post->title = $request->title;
         $post->description = $request->description;
         $this->validate(

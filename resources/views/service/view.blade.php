@@ -14,9 +14,11 @@
     </header>
     <section class="showcase mt-5 mb-5">
         <div class="container-fluid p-0">
-            <div class="row no-gutters">
-                <img class="img-fluid col-lg-6" src="{{asset('/images/upload/')}}/{{$service->image}}" alt=""/></span>
-                <div class="col-lg-6  my-auto showcase-text">
+            <div class="row service">
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="{{asset('/images/upload/')}}/{{$service->image}}" alt=""/>
+                </div>
+                <div class="col-lg-6">
                     <h2>{{$service->title}}</h2>
                     <p class="lead mb-3">
                         {!!$service->description!!}
@@ -26,10 +28,9 @@
             </div>
         </div>
     </section>
-    <section class="call-to-action text-white text-center">
-        <div class="overlay"></div>
-        <h2>KeratinNN.ru</h2>
+    <div class="call-action">
         <div class="container">
+            <h2>KeratinNN.ru</h2>
             <div class="row">
                 <div class="col-xl-9 mx-auto">
                     <h2 id="write" class="mb-4">Запишись прямо сейчас и получи подарок!</h2>
@@ -37,22 +38,22 @@
                 <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
                     <form method="POST" enctype="multipart/form-data"
                           action="{{action('ApplicationController@store')}}">
+                        <input type="hidden" name="_token" value="{{csrf_token()}}"/>
                         <div class="form-row">
                             <div class="col-12 col-md-9 mb-2 mb-md-0">
-                                <input type="text" class="form-control form-control-lg"
+                                <input id="phone" name="phone" type="text" class="form-control form-control-lg"
                                        placeholder="Ваш номер телефона">
                             </div>
                             @foreach ($errors->all() as $error)
                                 <li>{{ $error }}</li>
                             @endforeach
                             <div class="col-12 col-md-3">
-                                <button type="submit" name="phone" class="btn btn-lg btn-success">Оставить заявку!
-                                </button>
+                                <button type="submit" class="btn btn-lg btn-success">Оставить заявку!</button>
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 @endsection

@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use Image;
 use App\Service;
 
-
 class ServiceController extends Controller
 {
 
@@ -24,11 +23,6 @@ class ServiceController extends Controller
 
     public function store(Request $request)
     {
-        $alias = Service::rus2translit($request->title);
-        $service = new Service();
-        $service->title = $request->title;
-        $service->description = $request->description;
-        $service->alias = $alias;
         $this->validate(
             $request, [
             'title' => 'required|max:255',
@@ -39,6 +33,13 @@ class ServiceController extends Controller
                 'image' => 'Не совпадает формат изображения',
                 'max' => 'Слишком длинное описание',
             ]);
+
+        $alias = Service::rus2translit($request->title);
+        $service = new Service();
+        $service->title = $request->title;
+        $service->description = $request->description;
+        $service->alias = $alias;
+
         if ($request->hasFile('photo')) {
             $photo = $request->file('photo');
             $filename = substr(bcrypt(time()), 4, 14) . '_' . date("mdy") . '.' . $photo->getClientOriginalExtension();
@@ -48,27 +49,27 @@ class ServiceController extends Controller
             $service->save;
         }
         $service->save();
+
         return redirect('/admin');
     }
 
 
     public function show($alias)
     {
-        $service = Service::where('alias', $alias)->first();
+        $service = Service::all()->where('alias', $alias)->first();
+
         return view('service.view', ['service' => $service]);
     }
 
     public function edit($id)
     {
-        $service = Service::find($id);
+        $service = Service::all()->where('id', $id)->first();
+
         return view('service.edit', ['service' => $service]);
     }
 
     public function update(Request $request, $id)
     {
-        $service = Service::find($id);
-        $service->title = $request->title;
-        $service->description = $request->description;
         $this->validate(
             $request, [
             'title' => 'required|max:255',
@@ -79,6 +80,10 @@ class ServiceController extends Controller
                 'image' => 'Не совпадает формат изображения',
                 'max' => 'Слишком длинное описание',
             ]);
+
+        $service = Service::all()->where('id', $id)->first();
+        $service->title = $request->title;
+        $service->description = $request->description;
 
         if ($request->hasFile('photo')) {
             $photo = $request->file('photo');

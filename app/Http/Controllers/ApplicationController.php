@@ -10,10 +10,6 @@ class ApplicationController extends Controller
 
     public function store(Request $request)
     {
-        $application = new Application();
-        $application->phone = $request->phone;
-        $application->status = 'Обрабатывается';
-
         $this->validate(
             $request, [
             'phone' => 'required'],
@@ -21,6 +17,9 @@ class ApplicationController extends Controller
                 'required' => 'Заполните все поля'
             ]);
 
+        $application = new Application();
+        $application->phone = $request->phone;
+        $application->status = 'Обрабатывается';
         $application->save();
 
         return redirect('/');
@@ -28,7 +27,7 @@ class ApplicationController extends Controller
 
     public function update($id)
     {
-        $application = Application::where('id', $id);
+        $application = Application::all()->where('id', $id)->first();
         $application->status = 'Принято';
         $application->save();
 

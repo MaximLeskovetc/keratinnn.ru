@@ -3,7 +3,9 @@
         <a class="navbar-brand" href="{{url('/')}}">Keratin<b>NN</b></a>
         <ul class="contact pull-right list-inline">
             <li class="list-inline-item m-l-15">
-                <i class="fa fa-map-marker"></i> Нижний Новгород
+                <a href="#">
+                    <i class="fa fa-map-marker"></i> Нижний Новгород
+                </a>
             </li>
             <li class="list-inline-item m-l-15">
                 <a href="tel:8(908)157-49-97">
