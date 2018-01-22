@@ -8,14 +8,12 @@
     <section class="showcase mt-5">
         <div class="container-fluid">
             <div class="service">
-                <div class="row">
+                <div class="row service-image">
                     <div class="col-md-6">
-                        <div class="service-image">
-                            <img class="img-fluid" src="{{url('/images/upload/keratin.jpg')}}"/>
-                            <h2>Кератиновое выпрямление</h2>
-                        </div>
+                        <img class="img-fluid" src="{{url('/images/upload/keratin.jpg')}}"/>
                     </div>
                     <div class="col-md-6">
+                        <h2>Кератиновое выпрямление</h2>
                         <p> Кератиновое выпрямление и восстановление - одна из самых популярных процедур для
                             волос.
                             Блестящие,идеально прямые и здоровые волосы - вот результат,который не заставит себя
@@ -32,14 +30,12 @@
                 </div>
             </div>
             <div class="service">
-                <div class="row">
+                <div class="row service-image">
                     <div class="col-md-6">
-                        <div class="service-image">
-                            <img class="img-fluid" src="{{url('/images/upload/polir.jpg')}}">
-                            <h2>Полировка волос</h2>
-                        </div>
+                        <img class="img-fluid" src="{{url('/images/upload/polir.jpg')}}">
                     </div>
                     <div class="col-md-6">
+                        <h2>Полировка волос</h2>
                         <p> Полировка волос - замечательная альтернатива "горячим ножницам".
                             Наверно,каждая девушка уже сталкивалась с такой проблемой,как секущиеся кончики. Они не
                             дают
@@ -58,14 +54,12 @@
                 </div>
             </div>
             <div class="service">
-                <div class="row">
+                <div class="row service-image">
                     <div class="col-md-6">
-                        <div class="service-image">
-                            <img class="img-fluid" src="{{url('/images/upload/botox.jpg')}}">
-                            <h2>Ботокс волос</h2>
-                        </div>
+                        <img class="img-fluid" src="{{url('/images/upload/botox.jpg')}}">
                     </div>
                     <div class="col-md-6">
+                        <h2>Ботокс волос</h2>
                         <p> Ботокс для волос - новинка в сфере ухода за волосами. Несмотря на название,данная
                             процедура
                             не

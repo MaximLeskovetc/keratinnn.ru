@@ -86,7 +86,9 @@ header a {
 .post {
     margin: 30px;
 }
-
+.post img{
+    max-height: 400px;
+}
 .portfolio img {
     margin-bottom: 30px;
     max-height: 720px;
