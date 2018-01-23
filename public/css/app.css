@@ -3,9 +3,15 @@ body {
     color: #000;
     font-size: 14px;
 }
-.m-b-30{
+
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+.m-b-30 {
     margin-bottom: 30px;
 }
+
 .navbar-brand {
     color: #f5f5f5 !important;
 }
@@ -86,9 +92,11 @@ header a {
 .post {
     margin: 30px;
 }
-.post img{
+
+.post img {
     max-height: 400px;
 }
+
 .portfolio img {
     margin-bottom: 30px;
     max-height: 720px;
@@ -103,6 +111,7 @@ header a {
     padding-bottom: 30px;
     border-bottom: 1px solid #d4d4d4;
 }
+
 .service-image h2 {
     text-align: center;
     color: #f5f5f5;
@@ -139,10 +148,78 @@ footer {
     padding: 5px 20px;
 }
 
-footer a{
+footer a {
     font-size: 16px;
     color: #f5f5f5;
 }
-footer a:hover{
+
+footer a:hover {
     color: #f5f5f5;
+}
+
+/*Страница входа*/
+.login-register-form {
+    margin: 100px auto 270px;
+    width: 400px;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.login-register-form form {
+    width: 300px;
+}
+
+.login-register-form h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login-register-form input {
+    font-size: 12px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    width: 100%;
+}
+
+.login-register-form p {
+}
+
+.login-register-form label {
+    font-size: 12px;
+    clear: both;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.login-register-form button {
+    margin-top: 30px;
+    width: 300px;
+}
+
+.login-register-form a {
+    width: 148px;
+    margin-bottom: 10px;
+    color: #fff;
+    text-decoration: underline;
+    opacity: .5;
+}
+
+.login-register-form a:hover {
+    opacity: 1;
+}
+
+.label-hidden {
+    display: none;
+}
+
+.login-register-form .or {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.login-register-form small {
+    color: #fff;
+    padding-top: 10px;
+    opacity: .8;
 }

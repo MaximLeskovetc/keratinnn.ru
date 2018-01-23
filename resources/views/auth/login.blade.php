@@ -17,13 +17,33 @@
     <link href="{{asset('css/app.css')}}" rel="stylesheet">
 </head>
 <body>
-@include('layouts.header')
-@yield('content')
-@include('layouts.footer')
+<div class="login">
+    <div class="content">
+        <div class="row">
+            <div class="login-register-form">
+                <h1>Вход</h1>
+                <form method="POST" action="{{ url('/login') }}">
+                    {{ csrf_field() }}
+                    <label for="email">
+                        <p class="label-hidden">Эл. почта</p>
+                        <input type="text" name="email" placeholder="Эл. почта">
+                    </label>
+                    <label for="password">
+                        <p class="label-hidden">Пароль</p>
+                        <input type="password" name="password" placeholder="Пароль">
+                    </label>
+                    <button class="btn btn-success">Войти</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 <script src="{{asset('/vendor/jquery/jquery.min.js')}}"></script>
 <script src="{{asset('/vendor/jquery/jquery.maskedinput.js')}}"></script>
 <script src="{{asset('/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 <script src="{{asset('js/app.js')}}"></script>
-@yield('script')
+<script src="{{asset('js/reg_log.js')}}"></script>
 </body>
 </html>
+
+

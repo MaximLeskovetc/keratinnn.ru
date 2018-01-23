@@ -2,13 +2,10 @@
 @section ('title', 'Администраторская')
 @section ('description', 'Администраторская страница сайта')
 @section('content')
-
-
     <a href="{{url('/logout')}}" class="icon button" style="float:right; margin-top:10px;">Выйти</a>
-    <!-- Создание -->
     <section>
         <header class="main">
-            <center><h2>Администраторская</h2></center>
+            <h2>Администраторская</h2>
         </header>
         <hr class="major"/>
         <h3>Заявки</h3>
@@ -120,7 +117,7 @@
                         <td>
                             <a href="/portfolio/{{$portfolio->id}}" class="image">
                                 <img src="{{asset('/images/upload/')}}/{{$portfolio->image}}" alt=""
-                                     style="width:100px; heigth 100px;"/>
+                                     class="img-fluid"/>
                             </a>
                         </td>
                         <td>{{$portfolio->title}}</td>

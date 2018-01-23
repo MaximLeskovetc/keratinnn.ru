@@ -14,6 +14,7 @@
 Route::get('/', 'PageController@index');
 Route::get('/contact', 'PageController@contact');
 Route::get('/price', 'PageController@price');
+
 Route::get('/profile', 'PageController@profile');
 
 
@@ -25,5 +26,17 @@ Route::resource('comments', 'CommentsController');
 
 Auth::routes();
 
-Route::get('/admin', 'HomeController@admin');
-Route::get('/logout', 'HomeController@logout');
+Route::get('/admin', 'PageController@admin');
+
+
+//Route::get('/application', 'ApplicationController@index');
+//Route::get('/application/{application}', 'ApplicationController@show');
+//
+//
+////Заявки
+//Route::post('/application', 'ApplicationController@store');
+//Route::delete('/application/{application}', 'ApplicationController@delete');
+//
+////Комментарии
+//Route::post('/comment', 'CommentsController@store');
+//Route::delete('/comment/{comment}', 'CommentsController@delete');

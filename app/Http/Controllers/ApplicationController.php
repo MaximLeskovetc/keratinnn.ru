@@ -25,16 +25,7 @@ class ApplicationController extends Controller
         return redirect('/');
     }
 
-    public function update($id)
-    {
-        $application = Application::all()->where('id', $id)->first();
-        $application->status = 'Принято';
-        $application->save();
-
-        return redirect()->back();
-    }
-
-    public function destroy($id)
+    public function delete($id)
     {
         Application::destroy($id);
         return redirect()->back();

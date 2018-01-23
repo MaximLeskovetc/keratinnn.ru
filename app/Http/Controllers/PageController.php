@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Application;
 use App\Post;
 use App\Service;
 use App\Portfolio;
@@ -36,6 +37,30 @@ class PageController extends Controller
         );
     }
 
+    public function admin()
+    {
+        dd(Auth::check());
+//        if (Auth::user() == 1) {
+//            $portfolio = Portfolio::all();
+//            $service = Service::all();
+//            $posts = Post::all();
+//            $application = Application::all();
+//
+//            for ($i = 0; $i < count($posts); $i++) {
+//                $posts[$i]->description = str_limit($posts[$i]->description, 30);
+//            }
+//
+//            return view('page.admin', [
+//                'services' => $service,
+//                'posts' => $posts,
+//                'portfolios' => $portfolio,
+//                'applications' => $application,
+//            ]);
+//        }
+//
+//        return redirect()->back();
+    }
+
     public function price()
     {
         return view('page.price');
@@ -44,14 +69,5 @@ class PageController extends Controller
     public function contact()
     {
         return view('page.contact');
-    }
-
-    public function profile()
-    {
-
-        $name = Auth::user()->name;
-        return view('page.profile', [
-            'name' => $name
-        ]);
     }
 }
