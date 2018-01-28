@@ -1,4 +1,4 @@
-@extends('layout.app')
+@extends('layouts.app')
 @section ('title', 'Создание статьи')
 @section('content')
     <!-- Создание статьи -->
