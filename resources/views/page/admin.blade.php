@@ -2,7 +2,10 @@
 @section ('title', 'Администраторская')
 @section ('description', 'Администраторская страница сайта')
 @section('content')
-    <a href="{{url('/logout')}}" class="icon button" style="float:right; margin-top:10px;">Выйти</a>
+    <form id="logout-form" action="{{ route('logout') }}" method="POST">
+        {{ csrf_field() }}
+        <button type="submit" class="icon button" style="float:right; margin-top:10px;">Выйти</button>
+    </form>
     <section>
         <header class="main">
             <h2>Администраторская</h2>

@@ -22,7 +22,7 @@
         <div class="row">
             <div class="login-register-form">
                 <h1>Вход</h1>
-                <form class="form-horizontal" method="POST" action="{{ route('login') }}">
+                <form class="form-horizontal" method="POST" action="{{action('UsersController@postLogin')}}">
                     {{ csrf_field() }}
                     <label for="email">
                         <p class="label-hidden">Эл. почта</p>
@@ -32,7 +32,7 @@
                         <p class="label-hidden">Пароль</p>
                         <input type="password" name="password" placeholder="Пароль">
                     </label>
-                    <button class="btn btn-success">Войти</button>
+                    <button type="submit" class="btn btn-success">Войти</button>
                 </form>
             </div>
         </div>
