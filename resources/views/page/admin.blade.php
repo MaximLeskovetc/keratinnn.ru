@@ -1,4 +1,4 @@
-@extends('layout.app')
+@extends('layouts.app')
 @section ('title', 'Администраторская')
 @section ('description', 'Администраторская страница сайта')
 @section('content')
@@ -120,7 +120,6 @@
                                      class="img-fluid"/>
                             </a>
                         </td>
-                        <td>{{$portfolio->title}}</td>
                         <td><a href="/portfolio/{{$portfolio->id}}/edit" class="button">Редактировать</a></td>
                         <form method="POST" action="{{action('PortfolioController@destroy', $portfolio->id) }}">
                             <input type="hidden" name="_token" value="{{csrf_token()}}"/>

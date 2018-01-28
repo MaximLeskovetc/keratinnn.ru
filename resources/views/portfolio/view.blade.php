@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section ('title')
-    {{$portfolio->title}}
+    Примеры моих работ
 @endsection
 @section ('description', 'Страница с моей работой')
 @section ('canonical')
@@ -9,7 +9,7 @@
 @section('content')
     <div class="row portfolio">
         <div class="col-lg-12">
-            <h1 class="text-center">Портфолио</h1>
+            <h1 class="text-center">Примеры моих работ</h1>
             <div class="portfolio-image"
                  style="background-image: url({{url('images/upload')}}/{{$portfolio->image}})">
             </div>

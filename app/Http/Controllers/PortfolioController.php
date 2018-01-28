@@ -25,7 +25,6 @@ class PortfolioController extends Controller
     {
         $this->validate(
             $request, [
-            'title' => 'required|max:255',
             'photo' => 'image'],
             $messages = [
                 'required' => 'Заполните все поля',
@@ -34,8 +33,6 @@ class PortfolioController extends Controller
             ]);
 
         $portfolio = new Portfolio();
-        $portfolio->title = $request->title;
-
         if ($request->hasFile('photo')) {
             $photo = $request->file('photo');
             $filename = str_replace('/', '_', substr(bcrypt(time()), 4, 14) . '_' . date("mdy") . '.' . $photo->getClientOriginalExtension());
@@ -67,7 +64,6 @@ class PortfolioController extends Controller
     {
         $this->validate(
             $request, [
-            'title' => 'required|max:255',
             'photo' => 'image'],
             $messages = [
                 'required' => 'Заполните все поля',

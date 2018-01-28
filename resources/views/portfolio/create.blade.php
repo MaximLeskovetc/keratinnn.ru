@@ -1,4 +1,4 @@
-@extends('layout.app')
+@extends('layouts.app')
 @section ('title', 'Добавление фото')
 @section('content')
     <!-- Создание  фото-->
@@ -12,7 +12,6 @@
             <p>Фото</p>
             <p><input type="file" name="photo" accept="image/*,image/jpeg"></p>
             <p><label>Подпись к фото</label></p>
-            <p><input type="text" name="title" value="" placeholder="Подпись к фото"></p>
             @foreach ($errors->all() as $error)
                 <li>{{ $error }}</li>
             @endforeach

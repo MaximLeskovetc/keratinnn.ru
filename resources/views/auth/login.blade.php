@@ -22,7 +22,7 @@
         <div class="row">
             <div class="login-register-form">
                 <h1>Вход</h1>
-                <form method="POST" action="{{ url('/login') }}">
+                <form class="form-horizontal" method="POST" action="{{ route('login') }}">
                     {{ csrf_field() }}
                     <label for="email">
                         <p class="label-hidden">Эл. почта</p>
@@ -45,5 +45,3 @@
 <script src="{{asset('js/reg_log.js')}}"></script>
 </body>
 </html>
-
-

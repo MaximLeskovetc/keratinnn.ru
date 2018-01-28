@@ -1,4 +1,4 @@
-@extends('layout.app')
+@extends('layouts.app')
 @section ('title')
     Редактирование фото {{$portfolio->title}}
 @endsection
@@ -16,8 +16,6 @@
             <p><label>Редактировать фото</label></p>
             <p><input type="file" name="photo" accept="image/*,image/jpeg"></p>
             <img src="{{asset('/images/upload/')}}/{{$portfolio->image}}" alt="" style=" height: 256px; width: 340px;"/>
-            <p>Подпись к фото</p>
-            <p><input type="text" name="title" value="{{$portfolio->title}}"></p>
             @foreach ($errors->all() as $error)
                 <li>{{ $error }}</li>
             @endforeach

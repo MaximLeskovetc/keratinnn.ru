@@ -39,26 +39,23 @@ class PageController extends Controller
 
     public function admin()
     {
-        dd(Auth::check());
-//        if (Auth::user() == 1) {
-//            $portfolio = Portfolio::all();
-//            $service = Service::all();
-//            $posts = Post::all();
-//            $application = Application::all();
-//
-//            for ($i = 0; $i < count($posts); $i++) {
-//                $posts[$i]->description = str_limit($posts[$i]->description, 30);
-//            }
-//
-//            return view('page.admin', [
-//                'services' => $service,
-//                'posts' => $posts,
-//                'portfolios' => $portfolio,
-//                'applications' => $application,
-//            ]);
-//        }
-//
-//        return redirect()->back();
+
+        $portfolio = Portfolio::all();
+        $service = Service::all();
+        $posts = Post::all();
+        $application = Application::all();
+
+        for ($i = 0; $i < count($posts); $i++) {
+            $posts[$i]->description = str_limit($posts[$i]->description, 30);
+        }
+
+        return view('page.admin', [
+            'services' => $service,
+            'posts' => $posts,
+            'portfolios' => $portfolio,
+            'applications' => $application,
+        ]);
+
     }
 
     public function price()

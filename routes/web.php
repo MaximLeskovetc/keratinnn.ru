@@ -24,8 +24,6 @@ Route::resource('post', 'PostController');
 Route::resource('portfolio', 'PortfolioController');
 Route::resource('comments', 'CommentsController');
 
-Auth::routes();
-
 Route::get('/admin', 'PageController@admin');
 
 
@@ -40,3 +38,11 @@ Route::get('/admin', 'PageController@admin');
 ////Комментарии
 //Route::post('/comment', 'CommentsController@store');
 //Route::delete('/comment/{comment}', 'CommentsController@delete');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

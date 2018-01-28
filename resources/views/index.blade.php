@@ -106,7 +106,7 @@
                         <img class="img-fluid" src="{{url('images/upload')}}/{{$portfolio->image}}"/>
                     </div>
                 @endforeach
-                <a href="{{url('/portfolio')}}" class="btn btn-info">Посмотреть все работы</a>
+                <a href="{{url('/portfolio')}}" class="btn btn-info">Посмотреть другие работы</a>
             </div>
         </div>
     </section>
