@@ -18,7 +18,7 @@
                 </a>
             </li>
             <li class="list-inline-item m-l-15">
-                <a href="https://www.instagram.com/lina_hair52/">
+                <a href="https://www.instagram.com/lina_keratin_nn/">
                     <i class="fa fa-instagram"></i>
                 </a>
             </li>
