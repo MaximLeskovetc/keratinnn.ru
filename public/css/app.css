@@ -1,19 +1,39 @@
 body {
     font-family: 'Open Sans', sans-serif;
     color: #000;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    background-image: linear-gradient(180deg, rgba(145, 200, 255, 0.4), rgba(145, 130, 255, 0.4));
 }
 
-.row{
+ul {
+    padding: 0;
+    list-style: none
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.8px;
+}
+
+.row {
     margin-left: 0;
     margin-right: 0;
 }
+
 .m-b-30 {
     margin-bottom: 30px;
 }
 
 .navbar-brand {
     color: #f5f5f5 !important;
+}
+
+.main-container {
+    min-height: 100vh;
+    padding: 0 30px;
 }
 
 .content {
@@ -103,6 +123,7 @@ header a {
 }
 
 .portfolio {
+    text-align: center;
     margin-bottom: 30px;
 }
 
@@ -130,13 +151,21 @@ header a {
     background-size: cover;
     height: 300px;
     color: #f5f5f5;
-    margin-bottom: 30px;
 }
 
 .call-action h2 {
     font-size: 24px;
     text-align: center;
     padding-top: 30px;
+}
+
+.call-action ul {
+    text-align: center;
+}
+
+.call-action li {
+    font-size: 18px;
+    font-weight: bold;
 }
 
 footer {
@@ -222,4 +251,9 @@ footer a:hover {
     color: #fff;
     padding-top: 10px;
     opacity: .8;
+}
+
+.showcase {
+    margin: 0 auto;
+    max-width: 1110px;
 }

@@ -3,7 +3,7 @@
 @section ('description', 'Страница с контактной информацией')
 @section('content')
     <div class="container text-center">
-        <h2 class="mb-5">Контакты</h2>
+        <h2 class="mb-5 mt-3">Контакты</h2>
         <div class="row">
             <div class="col-lg-3 ">
                 <div class="testimonial-item mx-auto mb-5 mb-lg-0">
@@ -28,8 +28,9 @@
             <div class="col-lg-3 ">
                 <div class="testimonial-item mx-auto mb-5 mb-lg-0">
                     <h5>Instagram</h5>
-                    <i class="fa fa-instagram"></i>
-                    <a href="https://www.instagram.com/lina_hair52/"> lina_hair52</a>
+                    <a href="https://www.instagram.com/lina_keratin_nn/">
+                        <i class="fa fa-instagram"></i>
+                    lina_keratin_nn</a>
                 </div>
             </div>
             <div class="col-lg-3 ">

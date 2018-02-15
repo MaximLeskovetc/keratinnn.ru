@@ -62,7 +62,10 @@ class PageController extends Controller
     {
         return view('page.price');
     }
-
+    public function about()
+    {
+        return view('page.about');
+    }
     public function contact()
     {
         return view('page.contact');

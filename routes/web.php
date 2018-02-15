@@ -14,6 +14,8 @@
 Route::get('/', 'PageController@index');
 Route::get('/contact', 'PageController@contact');
 Route::get('/price', 'PageController@price');
+Route::get('/about', 'PageController@about');
+
 
 Route::get('/login', 'UsersController@getLogin');
 Route::post('/login', 'UsersController@postLogin');

@@ -18,7 +18,9 @@
 </head>
 <body>
 @include('layouts.header')
-@yield('content')
+<div class="main-container">
+    @yield('content')
+</div>
 @include('layouts.footer')
 <script src="{{asset('/vendor/jquery/jquery.min.js')}}"></script>
 <script src="{{asset('/vendor/jquery/jquery.maskedinput.js')}}"></script>

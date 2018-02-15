@@ -12,7 +12,7 @@
             <a href="#write" type="submit" class="btn btn-lg btn-success">Записаться сейчас</a>
         </div>
     </header>
-    <section class="showcase mt-5 mb-5">
+    <section class="showcase mt-5">
         <div class="container-fluid p-0">
             <div class="row service">
                 <div class="col-lg-6">
