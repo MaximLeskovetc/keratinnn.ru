@@ -2,7 +2,7 @@
 @section ('title', 'Контакты')
 @section ('description', 'Страница с контактной информацией')
 @section('content')
-    <div class="container text-center">
+    <div class="container contact text-center">
         <h2 class="mb-5 mt-3">Контакты</h2>
         <div class="row">
             <div class="col-lg-3 ">
