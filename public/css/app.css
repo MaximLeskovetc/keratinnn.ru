@@ -18,13 +18,17 @@ h2 {
     line-height: 28.8px;
 }
 
+a {
+    color: #fff;
+}
+
+a:hover {
+    color: #f5f5f5;
+}
+
 .row {
     margin-left: 0;
     margin-right: 0;
-}
-
-.m-b-30 {
-    margin-bottom: 30px;
 }
 
 .navbar-brand {
@@ -80,15 +84,17 @@ header {
 }
 
 header h1 {
-    color: #183257;
+    color: #3d89f5;
     font-size: 40px;
     padding-top: 80px;
+}
+header .bg{
+    background-color: rgba(0, 0, 0, .6);
 }
 
 header h3 {
     margin: 0 10px;
     padding: 5px;
-    background-color: rgba(0, 0, 0, .3);
 }
 
 header a {

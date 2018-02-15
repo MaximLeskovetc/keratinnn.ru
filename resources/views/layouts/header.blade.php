@@ -26,7 +26,13 @@
     </div>
 </nav>
 <header class="text-white text-center">
-    <h1>KeratinNN</h1>
-    <h3>Мастер по восстановлению волос</h3>
-    <a href="#write" type="submit" class="btn btn-md btn-success m-b-30">Записаться сейчас</a>
+    <div class="bg">
+        <h1>KeratinNN</h1>
+        <h3>Мастер по восстановлению волос</h3>
+        <ul class="mt-3 mb-4">
+            <li>Хочешь волосы как из рекламы за одну процедуру</li>
+            <li>тогда запишись прямо сейчас!</li>
+        </ul>
+        <a href="#write" type="submit" class="btn btn-md btn-success mb-5">Записаться сейчас</a>
+    </div>
 </header>

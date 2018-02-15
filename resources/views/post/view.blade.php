@@ -12,7 +12,7 @@
                  alt="{{$post->title}}">
             <h1>{{$post->title}}</h1>
             <p class="lead mb-3">{!!$post->description!!}</p>
-            <a href="{{url('/')}}" class="btn btn-info m-b-30">На главную</a>
+            <a href="{{url('/')}}" class="btn btn-info mb-3">На главную</a>
         </div>
     </div>
 @endsection
