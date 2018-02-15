@@ -4,14 +4,6 @@
 @endsection
 @section ('description', 'Страница с услугами в Нижнем Новгороде')
 @section('content')
-    <header class="masthead text-white text-center">
-        <div class="container">
-            <h1>KeratinNN</h1>
-            <h3 class="mb-5">Мастер по восстановлению волос</h3>
-            <div class="clearfix"></div>
-            <a href="#write" type="submit" class="btn btn-lg btn-success">Записаться сейчас</a>
-        </div>
-    </header>
     <section class="showcase mt-5">
         <div class="container-fluid p-0">
             <div class="row service">
