@@ -22,6 +22,8 @@ class ApplicationController extends Controller
         $application->status = 'Обрабатывается';
         $application->save();
 
+        $message = 'Новая заявка от ' . $application->phone;
+        mail('leskovstudio@gmail.com', null, $message);
         return redirect('/');
     }
 
