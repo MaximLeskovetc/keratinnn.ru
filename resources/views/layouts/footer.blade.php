@@ -73,7 +73,7 @@
                     </a>
                 </li>
             </ul>
-            <p>&copy; KeratinNN.ru 2017. Все права защищены.</p>
+            <p class="text-white">&copy; KeratinNN.ru 2017. Все права защищены.</p>
         </div>
     </div>
 </footer>
