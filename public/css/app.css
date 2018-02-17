@@ -37,7 +37,6 @@ a:hover {
 
 .main-container {
     min-height: 100vh;
-    padding: 0 30px;
 }
 
 .content {
@@ -88,7 +87,8 @@ header h1 {
     font-size: 40px;
     padding-top: 80px;
 }
-header .bg{
+
+header .bg {
     background-color: rgba(0, 0, 0, .6);
 }
 
@@ -175,12 +175,14 @@ header a {
 }
 
 footer {
+    color: #fff;
     position: relative;
     bottom: 0;
     width: 100%;
     background-color: rgba(24, 50, 87, 0.73);
     border: none;
     padding: 5px 20px;
+    text-align: center;
 }
 
 footer a {
@@ -188,8 +190,16 @@ footer a {
     color: #f5f5f5;
 }
 
+footer ul {
+    margin: 0 auto;
+}
+
 footer a:hover {
     color: #f5f5f5;
+}
+
+footer p {
+    margin: 0 auto;
 }
 
 /*Страница входа*/
@@ -264,6 +274,16 @@ footer a:hover {
     max-width: 1110px;
 }
 
-.contact a{
+.contact a {
     color: #000;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.img-fluid {
+    max-height: 100%;
+    width: auto;
 }
