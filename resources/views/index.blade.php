@@ -4,10 +4,10 @@
         <div class="container-fluid">
             <div class="service">
                 <div class="row service-image">
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                         <img class="img-fluid" src="{{url('/images/upload/keratin.jpg')}}"/>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                         <h2><a href="{{url('/service/keratinovoe_vipryamlenie')}}">Кератиновое выпрямление
                             </a>
                         </h2>
@@ -23,10 +23,10 @@
             </div>
             <div class="service">
                 <div class="row service-image">
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                         <img class="img-fluid" src="{{url('/images/upload/nanoplastika.jpg')}}">
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                         <h2>
                             <a href="{{url('/service/nanoplastika')}}">Нанопластика</a>
                         </h2>
@@ -42,10 +42,10 @@
             </div>
             <div class="service">
                 <div class="row service-image">
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                         <img class="img-fluid" src="{{url('/images/upload/botox.jpg')}}">
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                         <h2><a href="{{url('/service/botoks_volos')}}">Ботокс волос</a></h2>
                         <p> Ботокс для волос - новинка в сфере ухода за волосами. Несмотря на название,данная
                             процедура
@@ -65,10 +65,10 @@
             </div>
             <div class="service">
                 <div class="row service-image">
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                         <img class="img-fluid" src="{{url('/images/upload/polir.jpg')}}">
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                         <h2><a href="{{url('/service/polirovka_volos')}}">Полировка волос</a></h2>
                         <p> Полировка волос - замечательная альтернатива "горячим ножницам".
                             Наверно,каждая девушка уже сталкивалась с такой проблемой,как секущиеся кончики. Они не
@@ -113,7 +113,7 @@
             <h2 class="mb-5 mt-3">Примеры работ</h2>
             <div class="row portfolio">
                 @foreach($portfolios as $portfolio)
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                         <img class="img-fluid" src="{{url('images/upload')}}/{{$portfolio->image}}"/>
                     </div>
                 @endforeach
