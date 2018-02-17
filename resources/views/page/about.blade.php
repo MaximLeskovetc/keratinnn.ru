@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row mt-3">
             <p>Меня зовут Лина. Я частный мастер по реконструкции волос.</p>
-            <img style="max-height: 350px" class="img-fluid" src="{{asset('images/avatar/avatar.jpg')}}" alt="">
+            <img class="img-fluid" src="{{asset('images/avatar/avatar.jpg')}}" alt="">
             <p class="mt-2">И я знаю как всего за 1 процедуру преобразить ваши волосы!</p>
             <ul class="mt-3">
                 <li>▶ Кератиновое выпрямление - идеально гладкие волосы на срок до 6 месяцев. Процедура избавляет от
