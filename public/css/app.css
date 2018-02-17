@@ -103,7 +103,7 @@ header a {
 
 .post-image {
     margin-bottom: 30px;
-    padding-top: 300px;
+    padding-top: 250px;
     height: 380px;
     background-size: cover;
 }
@@ -113,6 +113,7 @@ header a {
     color: #f5f5f5;
     padding: 5px;
     background-color: rgba(0, 0, 0, .3);
+    line-height: 2;
 }
 
 .post {

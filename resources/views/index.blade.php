@@ -98,7 +98,7 @@
                         <div class="col-lg-6">
                             <div class="post-image"
                                  style="background-image: url({{url('images/upload/post')}}/{{$post->image}})">
-                                <a href="{{url('/post')}}/{{$post->alias}}">
+                                <a class="mb-3" href="{{url('/post')}}/{{$post->alias}}">
                                     {{$post->title}}
                                 </a>
                             </div>
