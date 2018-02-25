@@ -1,57 +1,68 @@
-<urlset xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"><!-- created with Free Online Sitemap Generator www.xml-sitemaps.com
+-->
     <url>
         <loc>http://keratinnn.ru/</loc>
-        <lastmod>2018-01-28T11:56:09+01:00</lastmod>
-        <priority>1.0</priority>
+        <lastmod>2018-02-25T17:49:33+00:00</lastmod>
+        <priority>1.00</priority>
     </url>
     <url>
         <loc>http://keratinnn.ru/service/keratinovoe_vipryamlenie</loc>
-        <lastmod>2018-01-28T11:56:09+01:00</lastmod>
-        <priority>0.8</priority>
+        <lastmod>2018-02-25T17:49:33+00:00</lastmod>
+        <priority>0.80</priority>
     </url>
     <url>
-        <loc>http://keratinnn.ru/service/polirovka_volos</loc>
-        <lastmod>2018-01-28T11:56:10+01:00</lastmod>
-        <priority>0.8</priority>
+        <loc>http://keratinnn.ru/service/nanoplastika</loc>
+        <lastmod>2018-02-25T17:49:33+00:00</lastmod>
+        <priority>0.80</priority>
     </url>
     <url>
         <loc>http://keratinnn.ru/service/botoks_volos</loc>
-        <lastmod>2018-01-28T11:56:11+01:00</lastmod>
-        <priority>0.8</priority>
+        <lastmod>2018-02-25T17:49:33+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://keratinnn.ru/service/polirovka_volos</loc>
+        <lastmod>2018-02-25T17:49:33+00:00</lastmod>
+        <priority>0.80</priority>
     </url>
     <url>
         <loc>http://keratinnn.ru/post/kuda_ischezaet_obem</loc>
-        <lastmod>2018-01-28T11:56:11+01:00</lastmod>
-        <priority>0.8</priority>
+        <lastmod>2018-02-25T17:49:33+00:00</lastmod>
+        <priority>0.80</priority>
     </url>
     <url>
         <loc>http://keratinnn.ru/post/chto_takoe_keratinovoe_vypryamlenie</loc>
-        <lastmod>2018-01-28T11:56:13+01:00</lastmod>
-        <priority>0.8</priority>
+        <lastmod>2018-02-25T17:49:33+00:00</lastmod>
+        <priority>0.80</priority>
     </url>
     <url>
         <loc>http://keratinnn.ru/post/tri_stadii_sekuschihsya_konchikov</loc>
-        <lastmod>2018-01-28T11:56:13+01:00</lastmod>
-        <priority>0.8</priority>
+        <lastmod>2018-02-25T17:49:33+00:00</lastmod>
+        <priority>0.80</priority>
     </url>
     <url>
         <loc>http://keratinnn.ru/post/chto_luchshe_dlya_blondinok_keratin_ili_botoks</loc>
-        <lastmod>2018-01-28T11:56:14+01:00</lastmod>
-        <priority>0.8</priority>
+        <lastmod>2018-02-25T17:49:33+00:00</lastmod>
+        <priority>0.80</priority>
     </url>
     <url>
         <loc>http://keratinnn.ru/portfolio</loc>
-        <lastmod>2018-01-28T11:56:15+01:00</lastmod>
-        <priority>1.0</priority>
+        <lastmod>2018-02-25T17:49:33+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://keratinnn.ru/about</loc>
+        <lastmod>2018-02-25T17:49:33+00:00</lastmod>
+        <priority>0.80</priority>
     </url>
     <url>
         <loc>http://keratinnn.ru/contact</loc>
-        <lastmod>2018-01-28T11:56:15+01:00</lastmod>
-        <priority>1.0</priority>
+        <lastmod>2018-02-25T17:49:33+00:00</lastmod>
+        <priority>0.80</priority>
     </url>
     <url>
         <loc>http://keratinnn.ru/price</loc>
-        <lastmod>2018-01-28T11:56:16+01:00</lastmod>
-        <priority>1.0</priority>
+        <lastmod>2018-02-25T17:49:33+00:00</lastmod>
+        <priority>0.80</priority>
     </url>
 </urlset>
