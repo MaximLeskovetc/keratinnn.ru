@@ -1,4 +1,7 @@
 @extends('layouts.app')
+@section('description')
+    Главная страница KeratinNN.ru
+@endsection
 @section('content')
     <section class="showcase mt-5">
         <div class="container-fluid">

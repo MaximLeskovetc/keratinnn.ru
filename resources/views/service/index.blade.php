@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section ('title', 'Услуги')
-@section ('description', 'Страница с моими услугами')
+@section ('description', 'Услуги реконструкции волос в Нижнем Новгороде')
 @section('content')
     <!-- Просмотр фото-->
     <section>

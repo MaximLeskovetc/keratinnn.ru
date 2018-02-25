@@ -2,7 +2,9 @@
 @section ('title')
     {{$service->title}}
 @endsection
-@section ('description', 'Страница с услугами в Нижнем Новгороде')
+@section ('description')
+    {{$service->title}} .в Нижнем Новгороде
+@endsection
 @section('content')
     <section class="showcase mt-5">
         <div class="container-fluid p-0">
