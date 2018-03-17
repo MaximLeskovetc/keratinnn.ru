@@ -186,17 +186,17 @@ header a:hover {
 
 /*Post*/
 .post {
-    width: 300px;
+    width: 250px;
     display: flex;
     margin: 40px;
     flex-direction: column;
 }
 
 .posts img {
-    height: 300px;
+    height: 250px;
     width: 100%;
-    max-width: 300px;
-    margin-bottom: -100px;
+    max-width: 250px;
+    margin-bottom: -130px;
 }
 
 .post a {
@@ -210,7 +210,7 @@ header a:hover {
 .posts .row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .posts .title h1 {
@@ -520,6 +520,15 @@ footer p {
 
 /*Media*/
 @media (max-width: 1045px) {
+    .post {
+        width: 300px;
+    }
+
+    .posts img {
+        height: 300px;
+        max-width: 300px;
+        margin-bottom: -90px;
+    }
     .center-block {
         margin-left: 0;
         width: 100%;
@@ -548,6 +557,7 @@ footer p {
         height: auto;
         width: 100%;
         max-width: none;
+        margin-bottom: -60px;
     }
 
     .location {

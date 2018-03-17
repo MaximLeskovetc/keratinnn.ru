@@ -88,7 +88,7 @@
             </div>
         </div>
     </section>
-    <section class="text-center">
+    <section class="showcase mt-1 text-center">
         <div class="posts">
             <div class="title">
                 <h1>Интересные статьи</h1>
