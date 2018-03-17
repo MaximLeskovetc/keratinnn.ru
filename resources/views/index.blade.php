@@ -96,10 +96,10 @@
             <div class="row">
                 @foreach($posts as $post)
                     <div class="post">
-                        <img src="{{url('images/upload/post')}}/{{$post->image}}" alt="">
                         <a href="{{url('/post')}}/{{$post->alias}}">
                             {{$post->title}}
                         </a>
+                        <img src="{{url('images/upload/post')}}/{{$post->image}}" alt="">
                     </div>
                 @endforeach
             </div>
