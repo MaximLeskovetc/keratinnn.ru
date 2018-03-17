@@ -88,21 +88,23 @@
             </div>
         </div>
     </section>
-    {{--<section class="text-center">--}}
-    {{--<div class="title">Интересные статьи</div>--}}
-    {{--<div class="row">--}}
-    {{--@foreach($posts as $post)--}}
-    {{--<div class="col-lg-6">--}}
-    {{--<div class="post-image"--}}
-    {{--style="background-image: url({{url('images/upload/post')}}/{{$post->image}})">--}}
-    {{--<a class="mb-3" href="{{url('/post')}}/{{$post->alias}}">--}}
-    {{--{{$post->title}}--}}
-    {{--</a>--}}
-    {{--</div>--}}
-    {{--</div>--}}
-    {{--@endforeach--}}
-    {{--</div>--}}
-    {{--</section>--}}
+    <section class="text-center">
+        <div class="posts">
+            <div class="title">
+                <h1>Интересные статьи</h1>
+            </div>
+            <div class="row">
+                @foreach($posts as $post)
+                    <div class="post">
+                        <img src="{{url('images/upload/post')}}/{{$post->image}}" alt="">
+                        <a href="{{url('/post')}}/{{$post->alias}}">
+                            {{$post->title}}
+                        </a>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </section>
     {{--<section class="text-center">--}}
     {{--<div class="title">Примеры работ</div>--}}
     {{--<div class="row">--}}

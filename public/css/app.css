@@ -185,6 +185,39 @@ header a:hover {
 /*End header*/
 
 /*Post*/
+.post {
+    width: 300px;
+    display: flex;
+    margin: 40px;
+    flex-direction: column;
+}
+
+.posts img {
+    height: 300px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: -100px;
+}
+
+.post a {
+    font-size: 20px;
+    color: #f5f5f5;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, .3);
+    line-height: 2;
+}
+
+.posts .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.posts .title h1 {
+    font-size: 20px;
+    color: #281b15;
+}
+
 .post-image {
     margin-bottom: 30px;
     padding-top: 250px;
@@ -198,14 +231,6 @@ header a:hover {
     padding: 5px;
     background-color: rgba(0, 0, 0, .3);
     line-height: 2;
-}
-
-.post {
-    margin: 30px;
-}
-
-.post img {
-    max-height: 400px;
 }
 
 /*End post*/
@@ -515,6 +540,16 @@ footer p {
 }
 
 @media (max-width: 780px) {
+    .post {
+        width: auto;
+    }
+
+    .post img {
+        height: auto;
+        width: 100%;
+        max-width: none;
+    }
+
     .location {
         display: none;
     }
