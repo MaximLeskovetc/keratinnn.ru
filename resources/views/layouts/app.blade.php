@@ -14,11 +14,11 @@
     <link href="{{asset('/vendor/simple-line-icons/css/simple-line-icons.css')}}" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
           type="text/css">
-    <link rel="stylesheet" href="{{asset('/fonts/GOTHIC.TTF')}}" type="text/css">
     <link href="{{asset('css/app.css')}}" rel="stylesheet">
 </head>
 <body>
-@include('layouts.header')
+@include('layouts.nav')
+@yield('header')
 <div class="main-container">
     @yield('content')
 </div>
@@ -27,6 +27,7 @@
 <script src="{{asset('/vendor/jquery/jquery.maskedinput.js')}}"></script>
 <script src="{{asset('/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 <script src="{{asset('js/app.js')}}"></script>
+<script src="{{asset('js/main.js')}}"></script>
 @yield('script')
 </body>
 </html>

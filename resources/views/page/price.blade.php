@@ -2,7 +2,7 @@
 @section ('title', 'Цены')
 @section ('description', 'Цены на услуги Кератинового выпрямления, ботокса для волос, нанопластики, и полировки в Нижнем Новгороде')
 @section('content')
-    <div class="container text-center">
+    <div class="container price text-center">
         <h2 class="mt-3">Цены</h2>
         <h2 class="mb-5">Сколько стоят улуги?</h2>
         <div class="row mb-5">

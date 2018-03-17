@@ -1,10 +1,10 @@
 body {
-    font-family: 'Open Sans', sans-serif;
-    color: #fff;
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    color: #251004;
     font-size: 16px;
     font-weight: 300;
     line-height: 24px;
-    background-image: linear-gradient(180deg, rgba(32, 18, 16, 0.8), rgba(58, 33, 17, 0.8));
+    background-color: rgba(231, 134, 67, 0.12);
 }
 
 ul {
@@ -19,46 +19,54 @@ h2 {
 }
 
 a {
-    color: #fff;
+    color: #251004;
 }
 
 a:hover {
-    color: #f5f5f5;
+    color: #452109;
 }
 
-.row {
-    margin-left: 0;
-    margin-right: 0;
+/*Navbar*/
+.navbar-brand:hover {
+    color: #d4d4d4 !important;
 }
 
 .navbar-brand {
     color: #f5f5f5 !important;
 }
 
-.main-container {
-    min-height: 100vh;
-}
-
-.content {
-    margin-top: 50px;
-}
-
-.clearfix {
-    clear: both;
-}
-
-.navbar-brand:hover {
-    color: #d4d4d4 !important;
-}
-
 .navbar {
-    background-color: rgba(24, 50, 87, 0.73);
+    background-color: #170b06;
     border: none;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    z-index: 10;
+    top: 0;
+}
+
+.navbar button, .navbar button:focus {
+    border: none;
+    outline: none;
+}
+
+.navbar .collapse {
+    width: 100%;
+    left: 0;
+    top: 70px;
 }
 
 .navbar a {
     color: #f5f5f5 !important;
     margin-left: 10px;
+}
+
+.navbar-brand .logo {
+    height: 45px;
 }
 
 .navbar a:hover {
@@ -76,33 +84,56 @@ a:hover {
     border: none;
 }
 
+.navbar .location {
+    color: #e1e1e1;
+    cursor: default;
+}
+
+/*End navbar*/
+
+/*Menu*/
+.menu {
+    top: 10px;
+    background: none;
+}
+
+.menu .container {
+    justify-content: flex-end;
+}
+
+.menu ul {
+    height: 30%;
+    background: #0000006b;
+    margin-top: 15px;
+    padding-top: 5px;
+}
+
+.menu .collapsing {
+    display: none;
+}
+
+/*End menu*/
+
+/*Header*/
 header {
-    background-image: linear-gradient(90deg, #201210, #3a2111);
-    min-height: 892px;
+    background-size: cover;
+}
+
+.right-block {
+    padding: 30px;
+    height: 100%;
+}
+
+.right-block a {
+    margin-top: 0;
 }
 
 .call {
-    margin-top: 100%;
-}
-
-.call ul {
-    background-color: rgba(0, 0, 0, .14);
-    border-radius: 5px;
-    border-bottom: 2px solid black;
-    margin: 0;
+    margin: auto 0;
 }
 
 .call li {
     font-size: 18px;
-}
-
-.mt--25 {
-    margin-top: -25px;
-    margin-bottom: -25px;
-}
-
-.m-b-30 {
-    margin-bottom: 30px;
 }
 
 header h1 {
@@ -110,6 +141,7 @@ header h1 {
     font-weight: bold;
     text-align: center;
     font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    cursor: default;
 }
 
 .green {
@@ -119,78 +151,21 @@ header h1 {
 header .bg {
     background-image: url("/images/header/bg-header.png");
     background-size: cover;
-    height: 892px;
+    min-height: 100vh;
     color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
 }
 
-.bg .logo {
-    margin: 150px auto;
+header .bg .logo {
+    margin: 150px auto 100px;
     width: 380px;
     height: 240px;
 }
 
 .center-block {
     margin-left: 25%;
-    float: left;
     width: 50%;
-}
-
-.right-block {
-    padding: 30px;
-    width: 25%;
-    float: left;
-}
-
-@media (max-width: 1045px) {
-    .center-block {
-        margin-left: 0;
-        width: 100%;
-    }
-
-    .main-container {
-        margin-top: 0;
-    }
-
-    .call {
-        margin-top: 0;
-    }
-
-    .call ul {
-        background: none;
-        border: none;
-    }
-
-    .right-block {
-        width: auto;
-        padding: 0;
-        float: none;
-    }
-    header{
-        min-height: 820px;
-    }
-    header .bg {
-        height: 820px;
-    }
-}
-
-@media (max-width: 390px) {
-    .bg .logo {
-        width: 190px;
-        height: 120px;
-        margin: 25px auto;
-    }
-
-    header .bg {
-        height: 480px;
-    }
-
-    header {
-        min-height: 480px;
-    }
-
-    .main-container {
-        margin-top: 0;
-    }
 }
 
 header h3 {
@@ -200,8 +175,16 @@ header h3 {
 
 header a {
     margin-top: 30px;
+    color: #e1e1e1;
 }
 
+header a:hover {
+    color: #f5f5f5;
+}
+
+/*End header*/
+
+/*Post*/
 .post-image {
     margin-bottom: 30px;
     padding-top: 250px;
@@ -225,6 +208,9 @@ header a {
     max-height: 400px;
 }
 
+/*End post*/
+
+/*Portfolio*/
 .portfolio img {
     margin-bottom: 30px;
     max-height: 720px;
@@ -235,40 +221,113 @@ header a {
     margin-bottom: 30px;
 }
 
+/*Service*/
 .service {
-    margin: 30px 30px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid #d4d4d4;
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px 30px;
 }
 
-.service-image h2 {
+.service .title {
+    margin: 10px 0;
     text-align: center;
-    color: #f5f5f5;
-    background-color: rgba(0, 0, 0, 0.6);
 }
 
-.title {
-    font-size: 24px;
-    font-weight: bold;
-    padding: 5px;
-    margin: 30px;
+.service .title a {
+    font-size: 20px;
+    color: #281b15;
 }
 
-.call-action {
-    background-image: url("/images/header/bg-header.png");
-    background-size: cover;
+.service .content {
+    margin-top: 0;
+    display: flex;
+}
+
+.service .content .text ol {
+    padding-left: 0;
+}
+
+.service .content .text {
+    margin-left: 30px;
+}
+
+.service .content img {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    max-height: 300px;
+    margin: 0 auto;
+}
+
+/*End service*/
+
+/*Contact*/
+.contacts {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 400px);;
+    justify-content: space-between;
+}
+
+.contacts .data {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contacts #map {
+    width: auto;
+    height: 90%;
+    margin: 0 auto;
+}
+
+.contacts .map {
     height: 300px;
+    width: 100%;
+}
+
+/*End contact*/
+
+/*Price*/
+.price {
+    margin-top: 40px;
+}
+
+/*End price*/
+
+/*Call action*/
+.call-action {
+    background-image: linear-gradient(90deg, #201210, #3a2111);
+    height: 400px;
     color: #f5f5f5;
+    text-align: center;
 }
 
-.call-action h2 {
-    font-size: 24px;
-    text-align: center;
-    padding-top: 30px;
+.call-action .container {
+    padding-top: 50px;
 }
 
-.call-action ul {
-    text-align: center;
+.call-action .img {
+    height: 100%;
+    background-image: url("/images/header/bg-footer.png");
+    background-size: cover;
+}
+
+.call-action a {
+    color: #e1e1e1;
+}
+
+.call-action a:hover {
+    color: #f5f5f5;
+
+}
+
+.call-action .action {
+    float: right;
+    max-width: 380px;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 20px;
 }
 
 .call-action li {
@@ -276,12 +335,29 @@ header a {
     font-weight: bold;
 }
 
+.call-action form input {
+    width: 250px;
+    margin: 0 auto;
+}
+
+.call-action form button {
+    margin-top: 10px;
+    width: 250px;
+}
+
+.call-action .logo {
+    height: 100px;
+}
+
+/*End call action*/
+
+/*Footer*/
 footer {
-    color: #fff;
+    color: #e1e1e1;
     position: relative;
     bottom: 0;
     width: 100%;
-    background-color: rgba(24, 50, 87, 0.73);
+    background-color: #170b06;
     border: none;
     padding: 5px 20px;
     text-align: center;
@@ -304,7 +380,9 @@ footer p {
     margin: 0 auto;
 }
 
-/*Страница входа*/
+/*End footer*/
+
+/*Login*/
 .login-register-form {
     margin: 100px auto 270px;
     width: 400px;
@@ -325,7 +403,7 @@ footer p {
     font-size: 12px;
     background: none;
     border: none;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #fff;
     width: 100%;
 }
 
@@ -347,7 +425,7 @@ footer p {
 .login-register-form a {
     width: 148px;
     margin-bottom: 10px;
-    color: #fff;
+    color: #e1e1e1;
     text-decoration: underline;
     opacity: .5;
 }
@@ -366,18 +444,15 @@ footer p {
 }
 
 .login-register-form small {
-    color: #fff;
+    color: #e1e1e1;
     padding-top: 10px;
     opacity: .8;
 }
 
+/*Shared*/
 .showcase {
     margin: 0 auto;
     max-width: 1110px;
-}
-
-.contact a {
-    color: #000;
 }
 
 .container-fluid {
@@ -388,4 +463,134 @@ footer p {
 .img-fluid {
     max-height: 100%;
     width: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.main-container {
+    padding-top: 40px;
+    /*min-height: 100vh;*/
+}
+
+.content {
+    margin-top: 50px;
+}
+
+.m-b-30 {
+    margin-bottom: 30px;
+}
+
+/*End shared*/
+
+/*Media*/
+@media (max-width: 1045px) {
+    .center-block {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .main-container {
+        margin-top: 0;
+    }
+
+    .call {
+        margin-top: 0;
+    }
+
+    .call ul {
+        background: none;
+        border: none;
+    }
+}
+
+@media (max-width: 780px) {
+    .location {
+        display: none;
+    }
+
+    .service .content {
+        flex-wrap: wrap;
+    }
+
+    .service .content img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .call-action .action {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 560px) {
+    header .bg .logo {
+        width: 190px;
+        height: 120px;
+        margin: 100px auto;
+    }
+
+    .service .content .text {
+        padding-top: 10px;
+        margin: 0;
+    }
+
+    .call-action .action {
+        background-color: rgba(0, 0, 0, .5);
+        float: none;
+        width: auto;
+    }
+}
+
+@media (max-width: 390px) {
+    .navbar .phone {
+        display: none;
+    }
+
+    .bg .logo {
+        margin: 25px auto;
+    }
+
+    .main-container {
+        margin-top: 0;
+    }
+
+    .call-action form input {
+        width: 200px;
+    }
+
+    .call-action form button {
+        width: 200px;
+    }
+
+    #modal {
+        right: 0;
+        left: 0 !important;
+        padding: 15px;
+    }
+}
+
+#modal {
+    background-color: #404040;
+    z-index: 100;
+    position: fixed;
+    top: 150px;
+    left: calc(50% - 190px);
+}
+
+.action span {
+    position: absolute;
+    right: 20px;
+    color: #fff;
+    top: 10px;
 }

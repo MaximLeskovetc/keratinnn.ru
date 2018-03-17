@@ -1,29 +1,35 @@
-{{--<nav class="navbar navbar-inverse navbar-fixed-top">--}}
-{{--<div class="container">--}}
-{{--<a class="navbar-brand" href="{{url('/')}}">Keratin<b>NN</b></a>--}}
-{{--<ul class="contact pull-right list-inline">--}}
-{{--<li class="list-inline-item m-l-15">--}}
-{{--<a href="#">--}}
-{{--<i class="fa fa-map-marker"></i> Нижний Новгород--}}
-{{--</a>--}}
-{{--</li>--}}
-{{--<li class="list-inline-item m-l-15">--}}
-{{--<a href="tel:8(908)157-49-97">--}}
-{{--<i class="fa fa-phone"></i> 8(908)157-49-97--}}
-{{--</a>--}}
-{{--</li>--}}
-{{--<li class="list-inline-item m-l-15">--}}
-{{--<a href="https://vk.com/keratin_botox_nn">--}}
-{{--<i class="fa fa-vk"></i>--}}
-{{--</a>--}}
-{{--</li>--}}
-{{--<li class="list-inline-item m-l-15">--}}
-{{--<a href="https://www.instagram.com/lina_keratin_nn/">--}}
-{{--<i class="fa fa-instagram"></i>--}}
-{{--</a>--}}
-{{--</li>--}}
-{{--</ul>--}}
-{{--</div>--}}
+{{--<nav class="navbar navbar-dark navbar-fixed-top menu">--}}
+    {{--<div class="container">--}}
+        {{--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"--}}
+                {{--aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">--}}
+            {{--<span class="navbar-toggler-icon"></span>--}}
+        {{--</button>--}}
+    {{--</div>--}}
+    {{--<div class="collapse" id="navbarToggleExternalContent">--}}
+        {{--<ul>--}}
+            {{--<li>--}}
+                {{--<a href="{{url('/service/keratinovoe_vipryamlenie')}}">Кератиновое выпрямление</a>--}}
+            {{--</li>--}}
+            {{--<li>--}}
+                {{--<a href="{{url('/service/nanoplastika')}}">Нанопластика</a>--}}
+            {{--</li>--}}
+            {{--<li>--}}
+                {{--<a href="{{url('/service/botoks_volos')}}">Ботокс волос</a>--}}
+            {{--</li>--}}
+            {{--<li>--}}
+                {{--<a href="{{url('/service/polirovka_volos')}}">Полировка волос</a>--}}
+            {{--</li>--}}
+            {{--<li>--}}
+                {{--<a href="{{url('/contact')}}">Контакты</a>--}}
+            {{--</li>--}}
+            {{--<li>--}}
+                {{--<a href="{{url('price')}}">Цены</a>--}}
+            {{--</li>--}}
+            {{--<li>--}}
+                {{--<a href="{{url('/')}}">Блог</a>--}}
+            {{--</li>--}}
+        {{--</ul>--}}
+    {{--</div>--}}
 {{--</nav>--}}
 <header class="text-white text-center">
     <div class="bg">
@@ -35,8 +41,8 @@
         <div class="right-block">
             <div class="call">
                 <ul class="list-inline pb-4">
-                    <li class="mb-3">
-                        <a href="#write" class="btn btn-success">Звони прямо сейчас!</a>
+                    <li class="mb-5">
+                        <a href="javascript:;" id="addModal" class="btn btn-success">Запишись прямо сейчас!</a>
                     </li>
                     <li class="d-inline-block mt--25">
                         <a href="tel:8(908)157-49-97">

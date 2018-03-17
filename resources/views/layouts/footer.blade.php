@@ -1,31 +1,39 @@
 <div class="call-action">
-    <div class="container">
-        <a href="{{url('/')}}">
-            <h2>KeratinNN.ru</h2>
-        </a>
-        <div class="row">
-            <div class="col-xl-9 mx-auto">
+    <div class="img">
+        <div class="container">
+            <div class="action">
+                <h2><a href="{{url('/')}}">
+                        <img class="logo" src="{{asset('/images/header/logo.png')}}" alt="logo">
+                    </a></h2>
+                <ul id="write" class="mb-4">
+                    <li>Волосы как из рекламы</li>
+                    <li class="green m-b-30">за 1 процедуру!</li>
+                </ul>
+                <form method="POST" enctype="multipart/form-data"
+                      action="{{action('ApplicationController@store')}}">
+                    <input type="hidden" name="_token" value="{{csrf_token()}}"/>
+                    <input id="phone" name="phone" type="text" class="form-control form-control-md"
+                           placeholder="Ваш номер телефона" required>
+                    <button type="submit" class="btn btn-md btn-success">Оставить заявку!</button>
+                </form>
+            </div>
+            <div class="action hidden" id="modal">
+                <a href="javascript:;">
+                    <span class="close">x</span>
+                </a>
+                <h2><a href="{{url('/')}}">
+                        <img class="logo" src="{{asset('/images/header/logo.png')}}" alt="logo">
+                    </a></h2>
                 <ul id="write" class="mb-4">
                     <li>Хочешь волосы как из рекламы за одну процедуру</li>
                     <li>тогда запишись прямо сейчас!</li>
                 </ul>
-            </div>
-            <div class="col-md-10 col-md-8 col-xl-7 mx-auto">
                 <form method="POST" enctype="multipart/form-data"
                       action="{{action('ApplicationController@store')}}">
                     <input type="hidden" name="_token" value="{{csrf_token()}}"/>
-                    <div class="form-row">
-                        <div class="col-12 col-md-9 mb-2 mb-md-0">
-                            <input id="phone" name="phone" type="text" class="form-control form-control-md"
-                                   placeholder="Ваш номер телефона">
-                        </div>
-                        @foreach ($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                        <div class="col-12 col-md-3">
-                            <button type="submit" class="btn btn-md btn-success">Оставить заявку!</button>
-                        </div>
-                    </div>
+                    <input id="phone" name="phone" type="text" class="form-control form-control-md"
+                           placeholder="Ваш номер телефона" required>
+                    <button type="submit" class="btn btn-md btn-success">Оставить заявку!</button>
                 </form>
             </div>
         </div>
@@ -39,7 +47,8 @@
                     <a href="{{url('/')}}">Главная</a>
                 </li>
                 <li class="list-inline-item">&sdot;</li>
-                <a href="{{url('/about')}}">Обо мне</a>
+                <li class="list-inline-item">
+                    <a href="{{url('/about')}}">Обо мне</a>
                 </li>
                 <li class="list-inline-item">&sdot;</li>
                 <li class="list-inline-item">
@@ -49,13 +58,10 @@
                 <li class="list-inline-item">
                     <a href="{{url('price')}}">Цены</a>
                 </li>
-
             </ul>
             <ul>
                 <li class="list-inline-item m-l-15">
-                    <a href="#">
                         <i class="fa fa-map-marker"></i> Нижний Новгород
-                    </a>
                 </li>
                 <li class="list-inline-item m-l-15">
                     <a href="tel:8(908)157-49-97">
@@ -73,7 +79,7 @@
                     </a>
                 </li>
             </ul>
-            <p class="text-white">&copy; KeratinNN.ru 2017. Все права защищены.</p>
+            <p class="text-white">&copy; KeratinNN.ru 2017-2018</p>
         </div>
     </div>
 </footer>

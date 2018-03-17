@@ -8,16 +8,17 @@
 @section('content')
     <section class="showcase mt-5">
         <div class="container-fluid p-0">
-            <div class="row service">
-                <div class="col-lg-6">
-                    <img class="img-fluid" src="{{asset('/images/upload/')}}/{{$service->image}}" alt=""/>
+            <div class="service">
+                <div class="title">
+                    <h1>{{$service->title}}</h1>
                 </div>
-                <div class="col-lg-6">
-                    <h2>{{$service->title}}</h2>
-                    <p class="lead mb-3">
+                <div class="content">
+                    <div class="text">
+                        {{--<img class="img-fluid" src="{{asset('/images/upload/')}}/{{$service->image}}" alt=""/>--}}
                         {!!$service->description!!}
-                        <a href="{{url('/')}}" class="btn btn-info mt-3">Вернуться к списку</a>
-                        <a href="#write" class="btn btn-success mt-3">Записаться</a>
+                        <a href="{{url('/')}}" class="btn btn-outline-primary mt-3">Вернуться к списку</a>
+                        <a href="javascript:;" id="addModal" class="btn btn-outline-success mt-3">Записаться</a>
+                    </div>
                 </div>
             </div>
         </div>
