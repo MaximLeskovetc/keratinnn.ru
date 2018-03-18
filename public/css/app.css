@@ -524,13 +524,16 @@ footer p {
     .post {
         width: 300px;
     }
-    .post a{
+
+    .post a {
         width: 300px;
     }
-    .posts img{
+
+    .posts img {
         height: 300px;
         max-width: 300px;
     }
+
     .center-block {
         margin-left: 0;
         width: 100%;
@@ -555,12 +558,14 @@ footer p {
         width: auto;
         margin-bottom: 80px;
     }
-    .post a{
+
+    .post a {
         top: 100px;
         margin: 0 auto;
         width: auto;
         position: relative;
     }
+
     .post img {
         height: auto;
         width: 100%;
@@ -636,9 +641,9 @@ footer p {
 #modal {
     background-color: #170b06;
     z-index: 100;
-    position: fixed;
+    position: absolute;
     left: calc(50% - 190px);
-    bottom: 50vh;
+    top: 0;
 }
 
 .action span {

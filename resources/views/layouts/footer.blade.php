@@ -26,7 +26,6 @@
                     </a></h2>
                 <ul id="write" class="mb-4">
                     <li>Хочешь волосы как из рекламы за одну процедуру</li>
-                    <li>тогда запишись прямо сейчас!</li>
                 </ul>
                 <form method="POST" enctype="multipart/form-data"
                       action="{{action('ApplicationController@store')}}">
