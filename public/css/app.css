@@ -599,7 +599,7 @@ footer p {
     }
 
     .call-action .action {
-        background-color: rgba(0, 0, 0, .5);
+        background-color: rgba(23, 11, 6, 0.5);
         float: none;
         width: auto;
     }
@@ -634,11 +634,11 @@ footer p {
 }
 
 #modal {
-    background-color: #404040;
+    background-color: #170b06;
     z-index: 100;
     position: fixed;
-    top: 150px;
     left: calc(50% - 190px);
+    bottom: 50vh;
 }
 
 .action span {
