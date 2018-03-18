@@ -25,7 +25,8 @@
                         <img class="logo" src="{{asset('/images/header/logo.png')}}" alt="logo">
                     </a></h2>
                 <ul id="write" class="mb-4">
-                    <li>Хочешь волосы как из рекламы за одну процедуру</li>
+                    <li>Волосы как из рекламы</li>
+                    <li class="green"> за 1 процедуру</li>
                 </ul>
                 <form method="POST" enctype="multipart/form-data"
                       action="{{action('ApplicationController@store')}}">
@@ -60,7 +61,7 @@
             </ul>
             <ul>
                 <li class="list-inline-item m-l-15">
-                        <i class="fa fa-map-marker"></i> Нижний Новгород
+                    <i class="fa fa-map-marker"></i> Нижний Новгород
                 </li>
                 <li class="list-inline-item m-l-15">
                     <a href="tel:8(908)157-49-97">
