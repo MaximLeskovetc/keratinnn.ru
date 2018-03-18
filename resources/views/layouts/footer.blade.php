@@ -31,7 +31,7 @@
                 <form method="POST" enctype="multipart/form-data"
                       action="{{action('ApplicationController@store')}}">
                     <input type="hidden" name="_token" value="{{csrf_token()}}"/>
-                    <input id="phone" name="phone" type="text" class="form-control form-control-md"
+                    <input id="phone_1" name="phone" type="text" class="form-control form-control-md"
                            placeholder="Ваш номер телефона" required>
                     <button type="submit" class="btn btn-md btn-success">Оставить заявку!</button>
                 </form>
