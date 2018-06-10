@@ -7,7 +7,7 @@
 @endsection
 @section('content')
     <div class="container">
-        <div class="row post">
+        <div class="row mt-5">
             <img style="max-height: 400px" class="img-fluid" src="{{asset('/images/upload/post')}}/{{$post->image}}"
                  alt="{{$post->title}}">
             <h1>{{$post->title}}</h1>
