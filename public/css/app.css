@@ -200,6 +200,7 @@ header a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-position: center;
 }
 
 .post-img h1 {
