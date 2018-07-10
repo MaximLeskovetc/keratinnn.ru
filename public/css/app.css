@@ -194,7 +194,7 @@ header a:hover {
 
 .post-img {
     background-size: cover;
-    height: 330px;
+    height: 80vh;
     width: 100%;
     background-attachment: fixed;
     display: flex;
