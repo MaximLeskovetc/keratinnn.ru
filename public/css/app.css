@@ -207,6 +207,7 @@ header a:hover {
     color: #fafafa;
     padding: 10px;
     background-color: rgba(23, 11, 6, 0.8);
+    margin: 0 30px;
 }
 
 .posts img {
