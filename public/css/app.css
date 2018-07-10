@@ -192,6 +192,22 @@ header a:hover {
     flex-direction: column;
 }
 
+.post-img {
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.post-img h1 {
+    color: #fafafa;
+    padding: 10px;
+    background-color: rgba(23, 11, 6, 0.8);
+}
+
 .posts img {
     height: 250px;
     width: 100%;
