@@ -29,7 +29,7 @@
             </div>
             <div class="testimonial-item mx-auto mb-5 mb-lg-0">
                 <h5><i class="fa fa-home">Адрес:</i></h5>
-                <p>г. Нижний Новгород, ул. Исполкома, д.3</p>
+                <p>г. Нижний Новгород, ул. Чаадаева, д.16 Салон "Арт-стайлинг"</p>
             </div>
         </div>
         <div class="map">
