@@ -8,7 +8,7 @@
             <div class="testimonial-item mx-auto mb-5 mb-lg-0">
                 <h5>Телефон</h5>
                 <i class="fa fa-phone"></i>
-                <a href="tel:8(908)157-49-97" class="logo"> 8(908)157-49-97</a>
+                <a href="tel:8(908)157-49-97" class="logo"> 8 908 157 49 97</a>
             </div>
             <div class="testimonial-item mx-auto mb-5 mb-lg-0">
                 <h5>Вконтакте</h5>
@@ -44,11 +44,11 @@
 
         function init() {
             myMap = new ymaps.Map("map", {
-                center: [56.354931, 43.860675],
+                center: [56.330027, 43.846052],
                 zoom: 16
             });
             myPlacemark = new ymaps.Placemark(
-                [56.354931, 43.860675],
+                [56.330027, 43.846052],
                 {hintContent: 'keratinnn.ru'}
             );
             myMap.geoObjects.add(myPlacemark);

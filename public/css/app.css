@@ -359,6 +359,11 @@ header a:hover {
     margin-top: 40px;
 }
 
+.price-item{
+    display: flex;
+    justify-content: space-between;
+}
+
 /*End price*/
 
 /*Call action*/
