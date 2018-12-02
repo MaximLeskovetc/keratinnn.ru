@@ -21,7 +21,7 @@
                 <h1>{{$post->title}}</h1>
             </div>
             <p class="lead mb-3">{!!$post->description!!}</p>
-            <a href="{{url('/')}}" class="btn btn-info mb-3">На главную</a>
+            <a href="{{url('/')}}" class="btn btn-primary mb-3">На главную</a>
         </div>
     </div>
 @endsection
