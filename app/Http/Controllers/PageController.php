@@ -13,7 +13,7 @@ class PageController extends Controller
     public function index()
     {
         $service = Service::all();
-        $posts = Post::all()->take(4);
+        $posts = Post::all();
         $portfolio = Portfolio::all()->take(8);
 
         for ($i = 0; $i < count($posts); $i++) {
