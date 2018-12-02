@@ -104,12 +104,10 @@
             </div>
             <div class="row">
                 @foreach($posts as $post)
-                    <div class="post">
-                        <a href="{{url('/post')}}/{{$post->alias}}">
-                            {{$post->title}}
-                        </a>
+                    <a href="{{url('/post')}}/{{$post->alias}}" class="post">
+                        <p>{{$post->title}}</p>
                         <img src="{{url('images/upload/post')}}/{{$post->image}}" alt="">
-                    </div>
+                    </a>
                 @endforeach
             </div>
         </div>

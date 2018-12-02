@@ -213,9 +213,10 @@ header a:hover {
     height: 250px;
     width: 100%;
     max-width: 250px;
+    object-fit: cover;
 }
 
-.post a {
+.post p {
     position: absolute;
     width: 250px;
     font-size: 20px;
@@ -569,7 +570,7 @@ footer p {
         width: 300px;
     }
 
-    .post a {
+    .post p {
         width: 300px;
     }
 
@@ -601,13 +602,13 @@ footer p {
     .post {
         width: auto;
         margin-bottom: 80px;
+        position: relative;
     }
 
-    .post a {
-        top: 100px;
+    .post p {
         margin: 0 auto;
-        width: auto;
-        position: relative;
+        width: 100%;
+        position: absolute;
     }
 
     .post img {
