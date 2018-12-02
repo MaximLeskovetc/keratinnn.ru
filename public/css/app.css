@@ -25,6 +25,10 @@ a:hover {
     color: #452109;
 }
 
+.row {
+    display: block;
+}
+
 /*Navbar*/
 .navbar-brand:hover {
     color: #d4d4d4 !important;
@@ -360,7 +364,7 @@ header a:hover {
     margin-top: 40px;
 }
 
-.price-item{
+.price-item {
     display: flex;
     justify-content: space-between;
 }
