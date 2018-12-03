@@ -17,15 +17,11 @@ class PageController extends Controller
         $portfolio = Portfolio::all()->take(8);
 
         for ($i = 0; $i < count($posts); $i++) {
-
-            $posts[$i]->description = str_limit($posts[$i]->description, 200);
-
+            $posts[$i]->description = str_limit(strip_tags($posts[$i]->description), 400);
         }
 
         for ($i = 0; $i < count($service); $i++) {
-
             $service[$i]->description = strip_tags(str_limit($service[$i]->description, 200));
-
         }
 
         return view('index',

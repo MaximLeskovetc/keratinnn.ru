@@ -14,10 +14,8 @@ class PostController extends Controller
     {
         $post = Post::all();
         for ($i = 0; $i < count($post); $i++) {
-
-            $post[$i]->description = str_limit($post[$i]->description, 200);
+            $post[$i]->description = str_limit(strip_tags($post[$i]->description), 200);
         }
-
         return view('post.index', ['posts' => $post]);
     }
 

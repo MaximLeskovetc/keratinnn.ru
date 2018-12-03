@@ -104,10 +104,14 @@
             </div>
             <div class="row">
                 @foreach($posts as $post)
-                    <a href="{{url('/post')}}/{{$post->alias}}" class="post">
-                        <p>{{$post->title}}</p>
-                        <img src="{{url('images/upload/post')}}/{{$post->image}}" alt="">
-                    </a>
+                    <div class="post">
+                        <img src="{{url('images/upload/post')}}/{{$post->image}}" alt="{{$post->title}}">
+                        <div class="content">
+                            <h1>{{$post->title}}</h1>
+                            <p>{{$post->description}}</p>
+                            <a href="{{url('/post')}}/{{$post->alias}}" class="btn btn-outline-success">Читать далее</a>
+                        </div>
+                    </div>
                 @endforeach
             </div>
         </div>
