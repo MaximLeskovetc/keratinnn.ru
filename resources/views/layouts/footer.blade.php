@@ -18,9 +18,7 @@
                 </form>
             </div>
             <div class="action hidden" id="modal">
-                <a href="javascript:;">
-                    <span class="close">x</span>
-                </a>
+                <button class="close">x</button>
                 <h2><a href="{{url('/')}}">
                         <img class="logo" src="{{asset('/images/header/logo.png')}}" alt="logo">
                     </a></h2>

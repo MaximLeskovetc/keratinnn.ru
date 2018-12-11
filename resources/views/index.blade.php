@@ -13,9 +13,9 @@
             </div>
             <div class="service">
                 <div class="title">
-                    <h1>
+                    <h2>
                         <a href="{{url('/service/keratinovoe_vipryamlenie')}}">Кератиновое выпрямление</a>
-                    </h1>
+                    </h2>
                 </div>
                 <div class="content">
                     <img src="{{url('/images/upload/keratin.jpg')}}"/>
@@ -26,15 +26,15 @@
                             утюжком? А сколько перепробовали масок,бальзамов для восстановления? Все эти проблемы можно
                             решить всего за одну процедуру! А результат вас будет радовать до 6-ти месяцев.</p>
                         <a href="{{url('/service/keratinovoe_vipryamlenie')}}" class="btn btn-outline-primary mt-3">Подробнее</a>
-                        <a href="javascript:;" id="addModal" class="btn btn-success mt-3">Записаться</a>
+                        <button id="addModal" class="btn btn-success mt-3">Записаться</button>
                     </div>
                 </div>
             </div>
             <div class="service">
                 <div class="title">
-                    <h1>
+                    <h2>
                         <a href="{{url('/service/nanoplastika')}}">Нанопластика</a>
-                    </h1>
+                    </h2>
                 </div>
                 <div class="content">
                     <img src="{{url('/images/upload/nanoplastika.jpg')}}">
@@ -45,15 +45,15 @@
                             и мелированных волосах средней и низкой степени повреждения. Состав максимально комфортен,
                             безопасен и эффективен, придает волосам зеркальную гладкость и блеск.</p>
                         <a href="{{url('/service/nanoplastika')}}" class="btn btn-outline-primary mt-3">Подробнее</a>
-                        <a href="javascript:;" id="addModal" class="btn btn-success mt-3">Записаться</a>
+                        <button id="addModal" class="btn btn-success mt-3">Записаться</button>
                     </div>
                 </div>
             </div>
             <div class="service">
                 <div class="title">
-                    <h1>
+                    <h2>
                         <a href="{{url('/service/botoks_volos')}}">Ботокс волос</a>
-                    </h1>
+                    </h2>
                 </div>
                 <div class="content">
                     <img src="{{url('/images/upload/botox.jpg')}}">
@@ -67,15 +67,15 @@
                             кератинового
                             выпрямления.</p>
                         <a href="{{url('/service/botoks_volos')}}" class="btn btn-outline-primary mt-3">Подробнее</a>
-                        <a href="javascript:;" id="addModal" class="btn btn-success mt-3">Записаться</a>
+                        <button id="addModal" class="btn btn-success mt-3">Записаться</button>
                     </div>
                 </div>
             </div>
             <div class="service">
                 <div class="title">
-                    <h1>
+                    <h2>
                         <a href="{{url('/service/polirovka_volos')}}">Полировка волос</a>
-                    </h1>
+                    </h2>
                 </div>
                 <div class="content">
                     <img src="{{url('/images/upload/polir.jpg')}}">
@@ -91,7 +91,7 @@
                             для
                             стрижки и специальной насадки для полировки.</p>
                         <a href="{{url('/service/polirovka_volos')}}" class="btn btn-outline-primary mt-3">Подробнее</a>
-                        <a href="javascript:;" id="addModal" class="btn btn-success mt-3">Записаться</a>
+                        <button id="addModal" class="btn btn-success mt-3">Записаться</button>
                     </div>
                 </div>
             </div>
@@ -107,7 +107,7 @@
                     <div class="post">
                         <img src="{{url('images/upload/post')}}/{{$post->image}}" alt="{{$post->title}}">
                         <div class="content">
-                            <h1>{{$post->title}}</h1>
+                            <h2>{{$post->title}}</h2>
                             <p>{{$post->description}}</p>
                             <a href="{{url('/post')}}/{{$post->alias}}" class="btn btn-outline-success">Читать далее</a>
                         </div>

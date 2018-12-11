@@ -148,6 +148,7 @@ header h1 {
 }
 
 .green {
+    font-size: 42px;
     color: #bbd648;
 }
 
@@ -173,8 +174,9 @@ header .bg .logo {
     width: 50%;
 }
 
-header h3 {
-    margin: 0 10px;
+.center-block li {
+    font-size: 38px;
+    line-height: 40px;
     padding: 5px;
 }
 
@@ -204,9 +206,10 @@ header a:hover {
     display: flex;
     flex-direction: row;
     height: auto;
-    box-shadow: 1px 1px 2px 0 rgba(23, 11, 6, 0.15);
+    box-shadow: 1px 1px 5px 1px rgba(23, 11, 6, 0.15), -1px -1px 4px 1px rgba(23, 11, 6, 0.15);
     margin: 50px auto;
     padding: 30px;
+    border-radius: 10px;
 }
 
 .row .post img {
@@ -261,9 +264,9 @@ header a:hover {
     display: flex;
     flex-direction: column;
     padding: 30px;
-    box-shadow: 1px 1px 2px 0 rgba(23, 11, 6, 0.15);
+    box-shadow: 1px 1px 5px 1px rgba(23, 11, 6, 0.15), -1px -1px 4px 1px rgba(23, 11, 6, 0.15);
     margin-bottom: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .service .title {
@@ -293,7 +296,6 @@ header a:hover {
 
 .service .content .text {
     color: #464a4e;
-    margin-left: 30px;
 }
 
 .service .content img {
@@ -301,7 +303,7 @@ header a:hover {
     height: 100%;
     max-width: 300px;
     max-height: 300px;
-    margin: 0 auto;
+    margin-right: 30px;
 }
 
 /*End service*/
@@ -539,6 +541,14 @@ footer p {
 
 .m-b-30 {
     margin-bottom: 30px;
+}
+
+.close {
+    color: #fff;
+}
+
+.close:hover {
+    color: #fff;
 }
 
 /*End shared*/
