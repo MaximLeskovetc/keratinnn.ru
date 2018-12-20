@@ -2,11 +2,11 @@
 @section ('title', 'Услуги')
 @section ('description', 'Услуги реконструкции волос в Нижнем Новгороде')
 @section('content')
-    <div class="services">
+    <div class="mt-5 services">
         <div class="title">
             <h1>Услуги</h1>
         </div>
-        <div class="service">
+        <div class="service showcase">
             <div class="title">
                 <h2>
                     <a href="{{url('/service/keratinovoe_vipryamlenie')}}">Кератиновое выпрямление</a>
@@ -91,7 +91,8 @@
             </div>
         </div>
     </div>
-    <hr/>
-    <a href="{{url('/')}}" class="btn btn-success mb-3 ml-3">На главную</a>
+    <div class="showcase">
+        <a href="{{url('/')}}" class="btn mb-3 btn-success">На главную</a>
+    </div>
 @endsection
 

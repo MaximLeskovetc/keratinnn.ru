@@ -201,12 +201,21 @@ header a:hover {
     flex-direction: column;
 }
 
+.posts .title h1 {
+    letter-spacing: 8px;
+    text-align: center;
+    font-size: 22px;
+    color: #281b15;
+    border-bottom: 1px solid rgba(23, 11, 6, 0.15);
+    padding-bottom: 5px;
+}
+
 .row .post {
     display: flex;
     flex-direction: row;
     height: auto;
     box-shadow: 1px 1px 5px 1px rgba(23, 11, 6, 0.15), -1px -1px 4px 1px rgba(23, 11, 6, 0.15);
-    margin: 50px auto;
+    margin: 0 auto 50px;
     padding: 30px;
     border-radius: 10px;
 }
