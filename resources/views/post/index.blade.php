@@ -2,27 +2,24 @@
 @section ('title', 'Статьи')
 @section ('description', 'Список публикаций')
 @section('content')
-    <!-- Статьи-->
-    <section>
+    <section class="mt-5">
         <header class="major">
-            <h1>Статьи</h1>
+            <h1>Блог</h1>
         </header>
     </section>
-    @foreach($posts as $post)
-        <section id="banner">
-            <div class="content">
-                <header>
-                    <a href="{{url('/post/')}}/{{$post->alias}}">
+    <div class="row">
+        <div class="posts">
+            @foreach($posts as $post)
+                <div class="post">
+                    <img src="{{url('images/upload/post')}}/{{$post->image}}" alt="{{$post->title}}">
+                    <div class="content">
                         <h2>{{$post->title}}</h2>
-                        <p>{!!$post->description!!}</p>
-                    </a>
-                </header>
-            </div>
-            <a href="{{url('/post/')}}/{{$post->alias}}" class="image">
-                <img src="{{asset('/images/upload/')}}/{{$post->image}}" alt="{{$post->title}}">
-            </a>
-        </section>
-    @endforeach
-    <hr/>
-    <a href="{{url('/')}}" class="button">На главную</a>
+                        <p>{{$post->description}}</p>
+                        <a href="{{url('/post')}}/{{$post->alias}}" class="btn btn-outline-success">Читать далее</a>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+        <a href="{{url('/')}}" class="btn ml-3 mb-3 btn-success">На главную</a>
+    </div>
 @endsection
