@@ -11,11 +11,8 @@ class ApplicationController extends Controller
     public function store(Request $request)
     {
         $this->validate(
-            $request, [
-            'phone' => 'required'],
-            $messages = [
-                'required' => 'Заполните все поля'
-            ]);
+            $request, ['phone' => 'required'],
+            $messages = ['required' => 'Заполните все поля']);
 
         $application = new Application();
         $application->phone = $request->phone;
@@ -23,7 +20,7 @@ class ApplicationController extends Controller
         $application->save();
 
         $message = 'Новая заявка от ' . $application->phone;
-        mail('leskovstudio@gmail.com', null, $message);
+        mail('lina.tvixy@gmail.com', null, $message);
         return redirect('/');
     }
 
