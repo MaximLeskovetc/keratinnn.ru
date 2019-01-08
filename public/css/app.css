@@ -14,7 +14,7 @@ ul {
 h2 {
     font-size: 24px;
     font-weight: 400;
-    line-height: 28.8px;
+    line-height: 29px;
 }
 
 a {
@@ -153,13 +153,12 @@ header h1 {
 }
 
 header .bg {
-    background-image: url("/images/header/bg-header.jpg");
     background-size: cover;
     min-height: 100vh;
     color: #f5f5f5;
     display: flex;
     flex-direction: column;
-    background-repeat: no-repeat;
+    background: url("/images/header/bg-header.jpg") no-repeat;
 }
 
 header .bg .logo {
@@ -242,11 +241,10 @@ header a:hover {
     background-size: cover;
     height: 80vh;
     width: 100%;
-    background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-position: center;
+    background: fixed center;
 }
 
 .post-img h1 {
