@@ -89,7 +89,7 @@
                             Некоторые задают вопрос "это то же самое, что и сос восстановление?"<br/>
                             Сос восстановление делается курсом, результат можно увидеть только после нескольких
                             процедур. После холодного ботокса результат видно сразу!</p>
-                        <a href="{{url('/service/botoks_volos')}}" class="btn btn-outline-primary mt-3">Подробнее</a>
+                        <a href="{{url('/service/cold_botoks')}}" class="btn btn-outline-primary mt-3">Подробнее</a>
                         <button id="addModal" class="btn btn-success mt-3">Записаться</button>
                     </div>
                 </div>
