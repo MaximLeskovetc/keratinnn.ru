@@ -25,7 +25,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/lina_keratin_nn/">
+                        <a href="https://www.instagram.com/lina.keratin/">
                             <i class="fa fa-instagram"></i> @lina_keratin_nn
                         </a>
                     </li>

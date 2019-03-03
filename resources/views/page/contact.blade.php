@@ -23,7 +23,7 @@
             </div>
             <div class="testimonial-item mx-auto mb-5 mb-lg-0">
                 <h5>Instagram</h5>
-                <a href="https://www.instagram.com/lina_keratin_nn/">
+                <a href="https://www.instagram.com/lina.keratin/">
                     <i class="fa fa-instagram"></i>
                     lina_keratin_nn</a>
             </div>
