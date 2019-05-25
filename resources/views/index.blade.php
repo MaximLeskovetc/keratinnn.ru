@@ -73,7 +73,7 @@
             <div class="service">
                 <div class="title">
                     <h2>
-                        <a href="{{url('/service/botoks_volos')}}">Холдодный ботокс</a>
+                        <a href="{{url('/service/botoks_volos')}}">Холодный ботокс</a>
                     </h2>
                 </div>
                 <div class="content">
