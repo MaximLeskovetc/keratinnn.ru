@@ -2,9 +2,9 @@
     <div class="img">
         <div class="container">
             <div class="action">
-                <!-- <h2><a href="{{url('/')}}"> -->
+                <h2><a href="{{url('/')}}">
                         <img class="logo" src="{{asset('/images/header/logo.png')}}" alt="logo">
-                    <!-- </a></h2> -->
+                    </a></h2>
                 <ul id="write" class="mb-4">
                     <li>Волосы как из рекламы</li>
                     <li class="green m-b-30">за 1 процедуру!</li>
@@ -19,9 +19,9 @@
             </div>
             <div class="action hidden" id="modal">
                 <button class="close">x</button>
-                <!-- <h2><a href="{{url('/')}}"> -->
+                <h2><a href="{{url('/')}}">
                         <img class="logo" src="{{asset('/images/header/logo.png')}}" alt="logo">
-                    <!-- </a></h2> -->
+                    </a></h2>
                 <ul id="write" class="mb-4">
                     <li>Волосы как из рекламы</li>
                     <li class="green"> за 1 процедуру</li>
