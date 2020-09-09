@@ -26,7 +26,7 @@
                             утюжком? А сколько перепробовали масок,бальзамов для восстановления? Все эти проблемы можно
                             решить всего за одну процедуру! А результат вас будет радовать до 6-ти месяцев.</p>
                         <a href="{{url('/service/keratinovoe_vipryamlenie')}}" class="btn btn-outline-primary mt-3">Подробнее</a>
-                        <button id="addModal" class="btn btn-success mt-3">Записаться</button>
+                        <a href="http://api.whatsapp.com/send?phone=79081574997" class="btn btn-success mt-3">Записаться</button>
                     </div>
                 </div>
             </div>
@@ -46,7 +46,7 @@
                             повреждения. Состав максимально комфортен, безопасен и эффективен, придает волосам
                             зеркальную гладкость и блеск.</p>
                         <a href="{{url('/service/nanoplastika')}}" class="btn btn-outline-primary mt-3">Подробнее</a>
-                        <button id="addModal" class="btn btn-success mt-3">Записаться</button>
+                        <a href="http://api.whatsapp.com/send?phone=79081574997" class="btn btn-success mt-3">Записаться</button>
                     </div>
                 </div>
             </div>
@@ -66,7 +66,7 @@
                             тех,кто не хочет выпрямлять естественные локоны или терять объем,что выгодно отличается от
                             кератинового выпрямления.</p>
                         <a href="{{url('/service/cold_botoks')}}" class="btn btn-outline-primary mt-3">Подробнее</a>
-                        <button id="addModal" class="btn btn-success mt-3">Записаться</button>
+                        <a href="http://api.whatsapp.com/send?phone=79081574997" class="btn btn-success mt-3">Записаться</button>
                     </div>
                 </div>
             </div>
@@ -90,7 +90,7 @@
                             Сос восстановление делается курсом, результат можно увидеть только после нескольких
                             процедур. После холодного ботокса результат видно сразу!</p>
                         <a href="{{url('/service/cold_botoks')}}" class="btn btn-outline-primary mt-3">Подробнее</a>
-                        <button id="addModal" class="btn btn-success mt-3">Записаться</button>
+                        <a href="http://api.whatsapp.com/send?phone=79081574997" class="btn btn-success mt-3">Записаться</button>
                     </div>
                 </div>
             </div>
@@ -110,7 +110,7 @@
                             насадка удаляет не более 5 мм. ). Процедура совершается при помощи машинки для стрижки и
                             специальной насадки для полировки.</p>
                         <a href="{{url('/service/polirovka_volos')}}" class="btn btn-outline-primary mt-3">Подробнее</a>
-                        <button id="addModal" class="btn btn-success mt-3">Записаться</button>
+                        <a href="http://api.whatsapp.com/send?phone=79081574997" class="btn btn-success mt-3">Записаться</button>
                     </div>
                 </div>
             </div>

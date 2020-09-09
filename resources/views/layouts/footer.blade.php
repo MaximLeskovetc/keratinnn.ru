@@ -17,7 +17,7 @@
                            placeholder="Ваш номер телефона" required> -->
                 <!-- </form> -->
             </div>
-            <div class="action hidden" id="modal">
+            <!-- <div class="action hidden" id="modal">
                 <button class="close">x</button>
                 <h2><a href="{{url('/')}}">
                         <img class="logo" src="{{asset('/images/header/logo.png')}}" alt="logo">
@@ -27,13 +27,13 @@
                     <li class="green"> за 1 процедуру</li>
                     <a href="http://api.whatsapp.com/send?phone=79081574997" class="btn btn-md btn-success">Записаться сейчас!</button>
                 </ul>
-                <!-- <form method="POST" enctype="multipart/form-data"
+                <form method="POST" enctype="multipart/form-data"
                       action="{{action('ApplicationController@store')}}">
                     <input type="hidden" name="_token" value="{{csrf_token()}}"/>
                     <input id="phone_1" name="phone" type="text" class="form-control form-control-md"
-                           placeholder="Ваш номер телефона" required> -->
-                <!-- </form> -->
-            </div>
+                           placeholder="Ваш номер телефона" required>
+                 </form>
+            </div>  -->
         </div>
     </div>
 </div>
