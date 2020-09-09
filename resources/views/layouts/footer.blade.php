@@ -8,7 +8,7 @@
                 <ul id="write" class="mb-4">
                     <li>Волосы как из рекламы</li>
                     <li class="green m-b-30">за 1 процедуру!</li>
-                    <a href="http://api.whatsapp.com/send?phone=79081574997" class="btn btn-md btn-success">Записаться сейчас!</button>
+                    <a href="http://api.whatsapp.com/send?phone=79081574997" class="btn btn-md btn-success">Записаться сейчас!</a>
                 </ul>
                 <!-- <form method="POST" enctype="multipart/form-data"
                       action="{{action('ApplicationController@store')}}">
