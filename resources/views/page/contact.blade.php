@@ -29,7 +29,7 @@
             </div>
             <div class="testimonial-item mx-auto mb-5 mb-lg-0">
                 <h5><i class="fa fa-home">Адрес:</i></h5>
-                <p>г. Нижний Новгород, ул. Чаадаева, д.16 Салон "Арт-стайлинг"</p>
+                <p>г. Нижний Новгород, ул. Московское шоссе, д.17 к.1</p>
             </div>
         </div>
         <div class="map">
@@ -44,11 +44,11 @@
 
         function init() {
             myMap = new ymaps.Map("map", {
-                center: [56.330027, 43.846052],
+                center: [56.321486, 43.932873],
                 zoom: 16
             });
             myPlacemark = new ymaps.Placemark(
-                [56.330027, 43.846052],
+                [56.321486, 43.932873],
                 {hintContent: 'keratinnn.ru'}
             );
             myMap.geoObjects.add(myPlacemark);
