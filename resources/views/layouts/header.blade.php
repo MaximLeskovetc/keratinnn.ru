@@ -9,9 +9,7 @@
             <div class="call">
                 <ul class="list-inline pb-4">
                     <li class="mb-5">
-                        <button id="addModal" aria-label="Записаться на процедуру" class="btn btn-success">Запишись
-                            прямо сейчас!
-                        </button>
+                    <a href="http://api.whatsapp.com/send?phone=79081574997" class="btn btn-success mt-3">Запишись прямо сейчас!</a>
                     </li>
                     <li class="d-inline-block mt--25">
                         <a href="tel:8(908)157-49-97">

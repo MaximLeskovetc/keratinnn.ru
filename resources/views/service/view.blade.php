@@ -16,7 +16,7 @@
                     <div class="text">
                         {!!$service->description!!}
                         <a href="{{url('/')}}" class="btn btn-outline-primary mt-3">Вернуться к списку</a>
-                        <button id="addModal" class="btn btn-success mt-3">Записаться</button>
+                        <a href="http://api.whatsapp.com/send?phone=79081574997" class="btn btn-success mt-3">Записаться</a>
                     </div>
                 </div>
             </div>

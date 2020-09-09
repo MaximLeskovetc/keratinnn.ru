@@ -21,7 +21,7 @@
                         утюжком? А сколько перепробовали масок,бальзамов для восстановления? Все эти проблемы можно
                         решить всего за одну процедуру! А результат вас будет радовать до 6-ти месяцев.</p>
                     <a href="{{url('/service/keratinovoe_vipryamlenie')}}" class="btn btn-outline-primary mt-3">Подробнее</a>
-                    <button id="addModal" class="btn btn-success mt-3">Записаться</button>
+                        <a href="http://api.whatsapp.com/send?phone=79081574997" class="btn btn-success mt-3">Записаться</a>
                 </div>
             </div>
         </div>
@@ -40,7 +40,7 @@
                         и мелированных волосах средней и низкой степени повреждения. Состав максимально комфортен,
                         безопасен и эффективен, придает волосам зеркальную гладкость и блеск.</p>
                     <a href="{{url('/service/nanoplastika')}}" class="btn btn-outline-primary mt-3">Подробнее</a>
-                    <button id="addModal" class="btn btn-success mt-3">Записаться</button>
+                    <a href="http://api.whatsapp.com/send?phone=79081574997" class="btn btn-success mt-3">Записаться</a>
                 </div>
             </div>
         </div>
@@ -62,7 +62,7 @@
                         кератинового
                         выпрямления.</p>
                     <a href="{{url('/service/botoks_volos')}}" class="btn btn-outline-primary mt-3">Подробнее</a>
-                    <button id="addModal" class="btn btn-success mt-3">Записаться</button>
+                    <a href="http://api.whatsapp.com/send?phone=79081574997" class="btn btn-success mt-3">Записаться</a>
                 </div>
             </div>
         </div>
@@ -86,7 +86,7 @@
                         для
                         стрижки и специальной насадки для полировки.</p>
                     <a href="{{url('/service/polirovka_volos')}}" class="btn btn-outline-primary mt-3">Подробнее</a>
-                    <button id="addModal" class="btn btn-success mt-3">Записаться</button>
+                    <a href="http://api.whatsapp.com/send?phone=79081574997" class="btn btn-success mt-3">Записаться</a>
                 </div>
             </div>
         </div>
