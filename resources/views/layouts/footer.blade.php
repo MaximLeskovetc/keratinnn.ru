@@ -2,37 +2,37 @@
     <div class="img">
         <div class="container">
             <div class="action">
-                <h2><a href="{{url('/')}}">
+                <!-- <h2><a href="{{url('/')}}"> -->
                         <img class="logo" src="{{asset('/images/header/logo.png')}}" alt="logo">
-                    </a></h2>
+                    <!-- </a></h2> -->
                 <ul id="write" class="mb-4">
                     <li>Волосы как из рекламы</li>
                     <li class="green m-b-30">за 1 процедуру!</li>
                 </ul>
-                <form method="POST" enctype="multipart/form-data"
+                <!-- <form method="POST" enctype="multipart/form-data"
                       action="{{action('ApplicationController@store')}}">
                     <input type="hidden" name="_token" value="{{csrf_token()}}"/>
                     <input id="phone" name="phone" type="text" class="form-control form-control-md"
-                           placeholder="Ваш номер телефона" required>
-                    <button type="submit" class="btn btn-md btn-success">Оставить заявку!</button>
-                </form>
+                           placeholder="Ваш номер телефона" required> -->
+                    <a href="http://api.whatsapp.com/send?phone=79081574997" class="btn btn-md btn-success">Записаться сейчас!</button>
+                <!-- </form> -->
             </div>
             <div class="action hidden" id="modal">
                 <button class="close">x</button>
-                <h2><a href="{{url('/')}}">
+                <!-- <h2><a href="{{url('/')}}"> -->
                         <img class="logo" src="{{asset('/images/header/logo.png')}}" alt="logo">
-                    </a></h2>
+                    <!-- </a></h2> -->
                 <ul id="write" class="mb-4">
                     <li>Волосы как из рекламы</li>
                     <li class="green"> за 1 процедуру</li>
                 </ul>
-                <form method="POST" enctype="multipart/form-data"
+                <!-- <form method="POST" enctype="multipart/form-data"
                       action="{{action('ApplicationController@store')}}">
                     <input type="hidden" name="_token" value="{{csrf_token()}}"/>
                     <input id="phone_1" name="phone" type="text" class="form-control form-control-md"
-                           placeholder="Ваш номер телефона" required>
-                    <button type="submit" class="btn btn-md btn-success">Оставить заявку!</button>
-                </form>
+                           placeholder="Ваш номер телефона" required> -->
+                           <a href="http://api.whatsapp.com/send?phone=79081574997" class="btn btn-md btn-success">Записаться сейчас!</button>
+                <!-- </form> -->
             </div>
         </div>
     </div>
